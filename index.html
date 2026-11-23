@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#101b39">
+<title>Hoop It Up! | Teacher Khen Learning Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lilita+One&family=Titan+One&family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101b39;--navy2:#1b2d59;--blue:#1d8be0;--cyan:#63e3ee;--gold:#ffd45c;--orange:#ff8b35;--red:#ed455c;--green:#44d49b;--paper:#fff9e9;--ink:#17233f;--shadow:0 12px 35px #06132d55}
+*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;font-family:Nunito,Arial,sans-serif;color:#fff}body{min-height:100dvh;background:#101b39 url('background.gif') center/cover fixed no-repeat;overflow-x:hidden}button,input,select,textarea{font:inherit}button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}button:disabled{opacity:.5;cursor:not-allowed}.hidden{display:none!important}.screen{display:none;min-height:100dvh;padding:16px}.screen.active{display:flex;flex-direction:column}.btn{border:2px solid #fff9;border-radius:16px;padding:12px 20px;background:linear-gradient(180deg,#ffe88b,#ffae37);color:#34234b;font:700 18px Fredoka,sans-serif;box-shadow:0 5px 0 #a65a24,0 8px 16px #0003;transition:transform .12s,filter .12s}.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #a65a24}.btn.blue{background:linear-gradient(#8beeff,#278fd7);box-shadow:0 5px 0 #14548a;color:#082849}.btn.pink{background:linear-gradient(#ffb9d2,#ed5e91);box-shadow:0 5px 0 #92365e;color:#40152d}.btn.dark{background:linear-gradient(#405889,#25365e);box-shadow:0 5px 0 #111c39;color:white}.btn.green{background:linear-gradient(#a1ffd3,#38c98f);box-shadow:0 5px 0 #14744e;color:#073d2b}.btn.small{font-size:14px;padding:8px 12px;border-radius:11px}.btn.ghost{background:#ffffff20;color:white;box-shadow:none;border-color:#ffffff70}.title{font:clamp(38px,8vw,88px)/1.1 Bungee,Fredoka,sans-serif;text-align:center;margin:0;color:#ffe16c;-webkit-text-stroke:1px #8a431c;text-shadow:0 5px #bd5b24,0 10px 24px #0009;letter-spacing:-2px}.subtitle{font:700 clamp(19px,3vw,30px) Fredoka,sans-serif;text-align:center;color:#fff;margin:8px 0 18px}.cover{position:relative;justify-content:center;align-items:center;text-align:center;background:linear-gradient(180deg,#07142b35,#07142b60),url('background.gif') center/cover no-repeat;isolation:isolate}.cover:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,#06142a10,#06142a70);z-index:-1}.cover-content{width:min(900px,100%);padding:25px 15px}.cover-logo{font-size:clamp(52px,12vw,120px);filter:drop-shadow(0 12px 8px #0006);margin-bottom:4px}.cover .title{max-width:100%;margin:auto}.cover-actions{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:28px}.cover-actions .btn{min-width:150px;font-size:clamp(18px,2.4vw,25px);padding:15px 25px}.corner-tools{position:absolute;top:12px;right:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.tool-pill{background:#081936c9;border:1px solid #ffffff55;border-radius:12px;padding:7px 10px;display:flex;align-items:center;gap:7px;font-weight:800}.tool-pill input{width:85px;accent-color:var(--gold)}.panel{width:min(1120px,100%);margin:auto;background:#fff9eefa;color:var(--ink);border:4px solid #fff;border-radius:24px;padding:clamp(15px,2.5vw,28px);box-shadow:var(--shadow)}.panel h2{font:700 clamp(24px,4vw,38px) Fredoka,sans-serif;color:#1b5685;margin:0 0 12px}.panel h3{font:700 22px Fredoka,sans-serif;color:#245c88;margin:16px 0 8px}.step-tag{display:inline-block;background:#193d6d;color:#fff;padding:6px 12px;border-radius:999px;font-weight:900;margin-bottom:10px}.field{display:flex;flex-direction:column;gap:5px;font-weight:900;font-size:14px;color:#29415e;min-width:0}.field input,.field select,.field textarea{width:100%;min-width:0;border:2px solid #b8d5df;border-radius:11px;padding:10px 12px;background:white;color:#1b2b43;outline:none}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#278fd7;box-shadow:0 0 0 3px #278fd722}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.between{justify-content:space-between}.muted{color:#5c6d83;font-size:13px}.notice{background:#e3f6ff;border-left:5px solid #258fd0;border-radius:10px;padding:11px 14px;color:#214a69;line-height:1.45;font-weight:700}.divider{height:1px;background:#cddde4;margin:17px 0}.toolbar{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;margin:12px 0}.auth{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:18px;background:#10172b}.auth-card{width:min(420px,100%);background:#1b294b;border:2px solid #ffffff35;border-radius:22px;padding:25px;color:white;text-align:center;box-shadow:var(--shadow)}.auth-card h1{font:700 30px Fredoka;color:#ffdc72;margin:0 0 8px}.auth-card input{display:block;width:100%;padding:13px;margin:10px 0;border:1px solid #bbb;border-radius:9px;font-size:16px;color:#17233f}.auth-card button{width:100%;margin:5px 0}.auth-message{min-height:32px;margin:12px 0;line-height:1.4}.member-bar{position:fixed;top:8px;right:8px;z-index:1000}.member-bar button{border:0;border-radius:9px;padding:7px 10px;background:#14274b;color:white;font-weight:900}
+/* tutorial */
+.tutorial{align-items:center;justify-content:center}.tutorial-card{width:min(900px,100%);margin:auto;background:#fff9eefa;color:var(--ink);border:5px solid #fff;border-radius:26px;padding:clamp(18px,3vw,34px);box-shadow:var(--shadow);text-align:center}.tutorial-card h2{font:700 clamp(28px,5vw,48px) Fredoka;color:#1b5685;margin:0 0 12px}.tutorial-card p{font:700 clamp(17px,2.5vw,24px) 'Comic Neue',cursive;line-height:1.35}.tutorial-visual{min-height:150px;display:flex;align-items:center;justify-content:center;gap:15px;flex-wrap:wrap;margin:18px 0}.demo-ball{width:clamp(76px,12vw,125px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,#ffcf7a,#d75c1c 70%);border:4px solid #fff;box-shadow:inset -7px -7px 0 #81340c55,0 8px 15px #0003;font:900 26px Bungee;color:white}.demo-card{width:90px;height:125px;border-radius:14px;display:grid;place-items:center;color:white;font:900 19px Fredoka;box-shadow:0 8px 18px #0004;animation:float 2s ease-in-out infinite}.demo-card:nth-child(2){animation-delay:.3s}.demo-card:nth-child(3){animation-delay:.6s}@keyframes float{50%{transform:translateY(-10px) rotate(2deg)}}
+/* question editor */
+.question-list{display:grid;gap:10px;margin-top:14px;max-height:42vh;overflow:auto;padding:2px}.question-card{background:#fff;border:2px solid #d5e5ec;border-radius:14px;padding:12px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}.question-card strong{color:#173f69}.question-card .actions{display:flex;gap:6px;flex-wrap:wrap}.thumb{max-width:100%;max-height:95px;object-fit:contain;border-radius:8px;background:#eef7fb}.option-editor{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.option-box{background:#edf7fb;border-radius:12px;padding:9px;display:grid;gap:6px}.option-box label{font-weight:900;color:#24577a}.fileline{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.fileline input{max-width:100%;font-size:12px}
+/* gameplay */
+.game-screen{padding:0!important;overflow:hidden;background:#101b39 url('backgroundgame.png') center/cover no-repeat}.game-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:8px 12px;background:#071832e8;border-bottom:2px solid #ffffff44;z-index:20}.scoreboard{display:flex;align-items:center;gap:10px;padding:7px 13px;border-radius:14px;background:linear-gradient(135deg,#174c85,#0b2a52);border:2px solid #9ceaff;box-shadow:0 4px 14px #0004;min-width:145px}.scoreboard.red{background:linear-gradient(135deg,#a52c51,#601b39);border-color:#ffb0c1}.team-name{font:700 15px Fredoka;opacity:.9}.score-number{font:900 clamp(22px,3vw,34px) Bungee;color:#ffe36b;text-shadow:0 2px #74400c}.timer{font:900 clamp(18px,2.6vw,29px) Bungee;color:#fff0a5;text-shadow:0 2px #000;white-space:nowrap}.game-content{flex:1;min-height:0;display:flex;flex-direction:column;align-items:stretch;padding:clamp(8px,1.5vw,18px);gap:10px;overflow:auto}.pool-title{text-align:center;font:900 clamp(22px,3vw,34px) 'Comic Neue',cursive;color:#fff;text-shadow:0 3px 5px #000;margin:3px}.ball-pool{width:min(1100px,100%);margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(clamp(80px,12vw,135px),1fr));gap:clamp(8px,1.5vw,18px);align-content:center;justify-items:center;padding:12px}.question-ball{width:clamp(76px,11vw,130px);aspect-ratio:1;border:0;border-radius:50%;background:transparent url('ball.png') center/contain no-repeat;display:grid;place-items:center;color:white;font:900 clamp(24px,3.5vw,38px) 'Comic Neue',cursive;text-shadow:0 3px 5px #251006,0 0 5px #000;filter:drop-shadow(0 7px 6px #0006);transition:transform .15s}.question-ball:active{transform:scale(.92)}.question-stage{width:min(1000px,100%);margin:auto;background:#fffaf0f2;color:#17233f;border:5px solid #fff;border-radius:24px;padding:clamp(15px,2.5vw,28px);box-shadow:var(--shadow);text-align:center;position:relative}.question-stage h2{font:700 clamp(24px,4vw,42px) 'Comic Neue',cursive;margin:0 0 12px;color:#163e68;overflow-wrap:anywhere}.question-image{display:block;max-width:min(100%,480px);max-height:28vh;object-fit:contain;margin:8px auto;border-radius:12px}.answer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.answer-btn{min-height:70px;border:3px solid #fff;border-radius:16px;padding:10px;background:linear-gradient(145deg,#fff,#d9f4ff);color:#173b61;box-shadow:0 5px 0 #6aa6c2;font:700 clamp(18px,2.5vw,27px) 'Comic Neue',cursive;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;overflow-wrap:anywhere}.answer-btn img{max-width:100px;max-height:75px;object-fit:contain}.answer-btn.correct{background:#aaffd3!important}.answer-btn.wrong{background:#ffc4ce!important}.ident-input{width:min(600px,100%);font:700 23px 'Comic Neue';padding:13px;border:3px solid #9bc9da;border-radius:13px;text-align:center}.stage-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:15px}.feedback{position:fixed;inset:0;z-index:80;display:grid;place-items:center;background:#06152dbb;padding:15px;animation:fadeIn .2s}.feedback-inner{width:min(700px,95vw);min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;color:white}.feedback-inner img{max-width:min(85vw,600px);max-height:65vh;object-fit:contain;filter:drop-shadow(0 8px 22px #0008)}.feedback-score{font:900 clamp(45px,10vw,100px) Bungee;color:#ffe05b;text-shadow:0 5px #7e4311,0 8px 18px #0008;animation:scorePop .65s ease-out}.feedback-score.negative{color:#ff6d78}.floating-score{position:fixed;z-index:120;font:900 clamp(30px,6vw,60px) Bungee;pointer-events:none;animation:flyScore 1.05s cubic-bezier(.2,.7,.25,1) forwards;text-shadow:0 3px 8px #0009}.floating-score.plus{color:#ffdf4e}.floating-score.minus{color:#ff5266}@keyframes flyScore{0%{opacity:0;transform:translate(-50%,0) scale(.6)}15%{opacity:1;transform:translate(-50%,-20px) scale(1.15)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.35)}}@keyframes scorePop{0%{transform:scale(.4) rotate(-8deg);opacity:0}70%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+/* rare card */
+.rare-overlay{position:fixed;inset:0;z-index:150;background:radial-gradient(circle,#273e79ed,#050c20f5);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px}.rare-overlay h2{font:900 clamp(27px,5vw,48px) Bungee;color:#ffe477;text-shadow:0 4px #a34c13;text-align:center}.rare-grid{display:grid;grid-template-columns:repeat(5,minmax(65px,120px));gap:clamp(6px,2vw,18px);width:min(760px,100%);justify-content:center}.rare-card{aspect-ratio:3/4;border:3px solid #fff;border-radius:15px;background:linear-gradient(145deg,#ffffff,#b8d5ff);box-shadow:0 0 16px var(--glow),0 9px 20px #0008;color:#203052;font:900 clamp(12px,2vw,18px) Fredoka;display:flex;align-items:center;justify-content:center;text-align:center;padding:5px;animation:float 1.8s ease-in-out infinite;position:relative;overflow:hidden}.rare-card:before{content:'★';position:absolute;font-size:50px;opacity:.12}.rare-card span{z-index:1}.rare-card:nth-child(1){--glow:#ff263d;background:linear-gradient(145deg,#ffb6c0,#b91e3c)}.rare-card:nth-child(2){--glow:#ffd42c;background:linear-gradient(145deg,#fff4a8,#e8ae21)}.rare-card:nth-child(3){--glow:#4be7a1;background:linear-gradient(145deg,#c1ffe0,#27b77d)}.rare-card:nth-child(4){--glow:#4ad7ff;background:linear-gradient(145deg,#d2f7ff,#2b9fd5)}.rare-card:nth-child(5){--glow:#d18aff;background:linear-gradient(145deg,#f2d4ff,#9650c6)}.rare-card.selected{animation:cardFlip .75s ease forwards;z-index:5}@keyframes cardFlip{50%{transform:translate(var(--fly-x,0),var(--fly-y,0)) rotateY(90deg) scale(1.25)}100%{transform:translate(var(--fly-x,0),var(--fly-y,0)) rotateY(0) scale(1.3);filter:brightness(1.6);box-shadow:0 0 40px white}}
+.end-overlay{position:fixed;inset:0;z-index:180;background:#06152deF;display:grid;place-items:center;padding:15px}.end-card{width:min(700px,96vw);background:linear-gradient(145deg,#fff8d6,#bceeff);color:#183557;border:6px solid #ffe27b;border-radius:28px;padding:clamp(20px,4vw,42px);text-align:center;box-shadow:0 20px 60px #0009}.trophy{font-size:clamp(65px,13vw,120px)}.end-card h2{font:900 clamp(28px,6vw,54px) Bungee;color:#1e5b8d;margin:5px}.final-scores{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font:900 clamp(22px,4vw,35px) Fredoka;margin:20px}.team-final{background:#fff;padding:12px 20px;border-radius:16px;box-shadow:0 4px 12px #0002}.two-team-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;flex:1;min-height:0}.team-panel{position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;background:linear-gradient(#07183266,#07183288),url('backgroundgame.png') center/cover no-repeat;border:2px solid #ffffff70;border-radius:15px;overflow:hidden}.team-panel .game-head{justify-content:center;padding:6px;gap:5px}.team-panel .scoreboard{min-width:0;padding:4px 8px}.team-panel .score-number{font-size:clamp(17px,2.5vw,26px)}.team-panel .game-content{padding:7px}.team-panel .question-stage{padding:10px;border-width:3px}.team-panel .question-stage h2{font-size:clamp(17px,2.2vw,27px)}.team-panel .answer-btn{min-height:55px;font-size:clamp(14px,1.8vw,20px);padding:6px}.team-panel .question-image{max-height:18vh}.team-panel .ball-pool{grid-template-columns:repeat(auto-fit,minmax(60px,1fr));gap:5px}.team-panel .question-ball{width:clamp(55px,7vw,85px);font-size:16px}.team-panel .ident-input{font-size:17px}.team-panel .feedback-inner img{max-height:35vh}.team-finished{margin:auto;text-align:center;color:white;font:700 24px Fredoka;padding:20px}.team-finished .bigscore{font:900 45px Bungee;color:#ffe16b}
+@media(max-width:720px){.two-team-layout{grid-template-columns:1fr;overflow:auto}.team-panel{min-height:48dvh}.team-panel .game-content{min-height:300px}.rare-grid{grid-template-columns:repeat(3,minmax(65px,100px))}.corner-tools{left:8px;right:8px;justify-content:center}.cover-content{padding-top:75px}.answer-grid{gap:7px}.answer-btn{min-height:62px}.game-head{justify-content:center}}
+@media(orientation:landscape) and (max-height:600px){.game-head{padding:4px 8px}.game-content{padding:5px}.question-stage{padding:9px}.question-image{max-height:19vh}.answer-btn{min-height:48px}.team-panel .question-image{max-height:14vh}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+
+/* Hoop It Up! usability refinements */
+.member-bar{position:static;top:auto;right:auto;z-index:auto;display:flex;align-items:center;margin-left:4px}
+.member-bar button{white-space:nowrap;padding:9px 13px;border:2px solid #ffffff70;border-radius:12px;background:#10294f;color:#fff;font:800 15px Fredoka;box-shadow:0 3px 0 #07152c}
+.corner-tools{left:12px;right:12px;justify-content:flex-end;gap:7px;z-index:30}
+.tool-pill{min-height:38px}
+.game-audio{padding:5px 7px;min-height:34px}.game-audio input{width:65px!important}.audio-tools{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}
+.audio-tools .tool-pill{padding:6px 10px}
+.tool-pill input{width:90px}
+.tutorial-card{width:min(96vw,1450px);min-height:80vh;display:flex;flex-direction:column;justify-content:center;padding:clamp(22px,4vw,55px)}
+.tutorial-card h2{font-size:clamp(36px,5.5vw,68px)}
+.tutorial-card p{font-size:clamp(22px,3vw,34px);max-width:1120px;margin:12px auto;line-height:1.28}
+.tutorial-visual{min-height:clamp(150px,25vh,260px);margin:clamp(14px,3vh,28px) 0}
+.demo-ball{width:clamp(105px,14vw,175px);font-size:clamp(30px,4vw,46px)}
+.demo-card{width:clamp(115px,13vw,175px);height:clamp(165px,25vh,245px);font-size:clamp(24px,3vw,38px);border:4px solid #fff;border-radius:22px}
+.team-name{font:900 clamp(17px,2.1vw,25px) Bungee,Fredoka,sans-serif;letter-spacing:.5px}
+.scoreboard{min-width:clamp(150px,18vw,230px);padding:9px 16px}
+.question-ball{width:clamp(105px,13vw,165px);font-size:clamp(23px,3vw,36px)}
+.ball-pool{width:min(1450px,100%);grid-template-columns:repeat(auto-fit,minmax(clamp(105px,13vw,165px),1fr));gap:clamp(12px,2vw,25px)}
+.game-head{justify-content:space-between}
+.one-team-scorebar{display:flex;align-items:center;justify-content:space-between;width:100%;gap:12px}
+.question-clock{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 12px;padding:8px 18px;border-radius:999px;background:#173d6e;color:#fff;border:3px solid #ffe27a;font:900 clamp(21px,3vw,34px) Bungee;box-shadow:0 5px 0 #091d3c}
+.question-clock small{font:800 14px Fredoka;color:#ffe27a}
+.rare-grid{grid-template-columns:repeat(5,minmax(120px, min(16vw,205px)));gap:clamp(12px,2vw,24px);width:min(1180px,96vw)}
+.rare-card{min-width:0;min-height:clamp(230px,42vh,390px);font-size:clamp(24px,3vw,42px);border-width:5px;border-radius:24px;box-shadow:0 0 25px var(--glow),0 12px 28px #0009}
+.rare-card span{font-size:clamp(38px,5vw,64px);font-family:Bungee,Fredoka,sans-serif;text-shadow:0 2px 6px #fff8}
+.rare-result{font:900 clamp(38px,7vw,86px) Bungee;color:#fff;padding:18px 30px;border:5px solid currentColor;border-radius:22px;background:#071832eF;text-shadow:0 4px 12px #000;box-shadow:0 0 40px currentColor;min-width:min(80vw,560px)}
+.rare-result.positive{color:#79ffc0}.rare-result.negative{color:#ff7487}
+.rare-overlay>p{font-size:clamp(19px,2.5vw,30px);font-weight:900}
+@media(max-width:800px){.corner-tools{justify-content:center;top:8px}.rare-grid{grid-template-columns:repeat(3,minmax(95px,1fr));width:min(95vw,600px)}.rare-card{min-height:clamp(155px,25vh,230px)}.tutorial-card{min-height:80vh}.member-bar{margin:0}}
+@media(max-width:520px){.audio-tools{gap:5px}.tool-pill input{width:70px}.corner-tools{flex-wrap:wrap}.rare-grid{grid-template-columns:repeat(3,minmax(82px,1fr))}.rare-card{min-height:150px}.scoreboard{min-width:0;padding:7px 9px}}
+
+
+/* Hoop It Up! V5 classroom-friendly responsive layout */
+.ball-magic-flash{position:absolute;inset:0;z-index:30;pointer-events:none;background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(255,238,105,.0) 0deg 9deg,rgba(255,255,255,.65) 10deg 12deg,rgba(35,197,255,.0) 18deg 30deg);animation:magicSpin .82s ease-out both;mix-blend-mode:screen}
+@keyframes magicSpin{0%{opacity:0;transform:scale(.3) rotate(0deg)}25%{opacity:.95;transform:scale(.9) rotate(120deg)}75%{opacity:.85;transform:scale(1.2) rotate(300deg)}100%{opacity:0;transform:scale(1.5) rotate(420deg)}}
+:root{--kid-blue:#168de0;--kid-orange:#ff9b25;--kid-yellow:#ffe35b;--kid-pink:#ff5e91}
+*{font-family:'Comic Neue',cursive!important}
+body{overflow:hidden}
+.game-screen{height:100dvh;min-height:0;overflow:hidden}
+#gameOne .game-content{height:calc(100dvh - 112px);min-height:0;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(8px,1.5vh,18px);padding:clamp(8px,1.5vw,20px)}
+#gameOne .subtitle{width:fit-content;max-width:95%;margin:0 auto;padding:10px 20px;border:3px solid white;border-radius:18px;background:rgba(255,255,255,.94);color:#17436c;text-shadow:none;font:900 clamp(20px,2.5vw,30px) 'Comic Neue',cursive;box-shadow:0 5px 0 #75c5ed}
+.ball-pool{width:min(1500px,100%);height:100%;min-height:0;flex:1 1 auto;max-height:calc(100dvh - 210px);margin:0 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:minmax(0,1fr);align-items:center;justify-items:center;align-content:center;gap:clamp(7px,1.5vw,22px);padding:clamp(5px,1vw,14px);overflow:hidden}
+.question-ball{width:min(100%,var(--dynamic-ball-size,190px));max-width:196px;min-width:0;aspect-ratio:1;border:0;border-radius:50%;background:transparent url('ball.png') center/contain no-repeat;display:grid;place-items:center;color:#fff;font:900 clamp(26px,3.3vw,46px) 'Comic Neue',cursive;text-shadow:0 3px 5px #251006,0 0 6px #000;filter:drop-shadow(0 8px 7px #0008);transition:transform .18s,filter .18s;cursor:pointer}
+.question-ball:hover{transform:scale(1.08);filter:drop-shadow(0 0 14px #ffe75b) drop-shadow(0 8px 7px #0008)}
+.question-ball.is-opening{animation:ballMagic .85s ease both;filter:drop-shadow(0 0 18px #fff36b) drop-shadow(0 0 32px #31c9ff)}
+@keyframes ballMagic{0%{transform:scale(1) rotate(0);filter:brightness(1)}35%{transform:scale(1.22) rotate(100deg);filter:brightness(1.8) drop-shadow(0 0 25px #fff36b)}70%{transform:scale(1.12) rotate(250deg);filter:brightness(1.6) drop-shadow(0 0 35px #54dfff)}100%{transform:scale(.86) rotate(360deg);opacity:.15}}
+#gameOne .toolbar{margin:0;justify-content:center}
+.question-stage{max-height:100%;overflow:auto}
+.question-stage .question-topline{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.question-stage .question-clock{flex:0 0 auto}
+.question-stage h2{max-width:100%;overflow-wrap:anywhere}
+#gameOne .question-image{max-height:22vh}
+.answer-btn{min-height:clamp(54px,9vh,78px)}
+.tutorial-card{width:min(94vw,1400px);min-height:80dvh;display:flex;flex-direction:column;justify-content:center}
+.tutorial-card h2{font-family:'Comic Neue',cursive!important;font-size:clamp(32px,5vw,64px)}
+.tutorial-card p{font-family:'Comic Neue',cursive!important;font-size:clamp(20px,2.5vw,30px)}
+.team-name,.team-label,.scoreboard .team-name,.score-number,.timer{font-family:'Comic Neue',cursive!important;font-weight:900;letter-spacing:1px}.team-panel .game-content{min-height:0;overflow:hidden}.team-panel .ball-pool{max-height:100%;height:100%;}
+@media(max-width:700px){.ball-pool{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}.question-ball{width:min(100%,17vw);font-size:clamp(16px,4vw,27px)}#gameOne .game-content{height:calc(100dvh - 90px)}.question-stage{padding:10px;border-width:3px}.answer-grid{gap:6px}.answer-btn{min-height:50px;font-size:clamp(15px,3vw,20px)}}
+@media(max-height:650px){.ball-pool{max-height:calc(100dvh - 150px)}.question-ball{width:min(100%,16vh)}#gameOne .game-content{height:calc(100dvh - 84px)}}
+
+
+</style>
+
+<style id="hoop-kids-polish">
+/* Brighter, playful basketball arcade finish */
+:root{--navy:#102e68;--navy2:#174c91;--blue:#19a9f4;--cyan:#6ff3ff;--gold:#ffe45e;--orange:#ff8a27;--red:#ff4778;--green:#40e0a0;--paper:#fff9e8}
+body{background-color:#102e68}
+.btn,.tool-pill{border-radius:18px!important;box-shadow:0 5px 0 #071a3b55,0 8px 18px #071a3b33!important}
+.team-name{font:900 clamp(18px,2.2vw,25px) Bungee,Fredoka,sans-serif!important;letter-spacing:.7px;text-transform:uppercase;text-shadow:0 2px 0 #071a3b,0 0 12px #ffe45e88!important;opacity:1!important}
+.scoreboard{border-radius:20px!important;box-shadow:0 5px 0 #071a3b66,0 0 22px #45d9ff55!important}
+.scoreboard.red{box-shadow:0 5px 0 #40102988,0 0 22px #ff7ca655!important}
+.question-stage{background:linear-gradient(145deg,#fffef5f5,#e7f8ffff)!important;border:4px solid #fff!important;border-radius:28px!important;box-shadow:0 12px 0 #0c2e5b55,0 18px 35px #061a3b55!important}
+.question-stage h2{color:#123c78!important;font-family:Fredoka,Comic Neue,sans-serif!important;font-weight:800!important;text-shadow:0 2px #fff!important}
+.answer-option,.answer-btn,.question-option{border:3px solid #fff!important;box-shadow:0 5px 0 #1875a7aa,0 8px 18px #0c2e5b22!important}
+.question-clock{width:76px!important;height:76px!important;min-width:76px!important;padding:5px!important;margin:0 auto 10px!important;border-radius:50%!important;display:flex!important;flex-direction:column!important;gap:0!important;background:radial-gradient(circle at 30% 25%,#277fca,#102f70 75%)!important;border:3px solid #ffe45e!important;box-shadow:0 4px 0 #081c40,0 0 18px #59dcff88!important;font:900 19px Bungee!important}
+.question-clock small{font:900 8px Fredoka!important;line-height:1.1!important;color:#ffe45e!important;letter-spacing:.3px}
+.question-clock .elapsed-value{font:900 17px Bungee!important;line-height:1.25!important;color:#fff!important}
+.rare-overlay{background:radial-gradient(circle at 50% 35%,#385fbdf5,#111d4bf7 65%,#080f2afc)!important}
+.rare-overlay h2{color:#fff06a!important;text-shadow:0 4px #a84b13,0 0 20px #ffec7c!important}
+.rare-grid{perspective:1400px}
+.rare-card{perspective:1000px!important;overflow:visible!important;border-radius:25px!important}
+.rare-card-inner{position:relative;display:block;width:100%;height:100%;min-height:inherit;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.2,.75,.25,1)}
+.rare-card.flipped .rare-card-inner{transform:rotateY(180deg)}
+.rare-card-face{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border-radius:19px;backface-visibility:hidden;-webkit-backface-visibility:hidden;padding:10px;color:#172b55;font:900 clamp(25px,3vw,44px) Bungee;text-shadow:0 2px 8px #fff9}
+.rare-card-front{background:linear-gradient(145deg,#ffffff66,#ffffff12)}
+.rare-card-front small,.rare-card-back small{font:900 clamp(12px,1.5vw,18px) Fredoka;letter-spacing:1px}
+.rare-card-back{transform:rotateY(180deg);background:linear-gradient(145deg,#fffdf0,#ffe7a2);border:4px solid #fff;box-shadow:inset 0 0 25px #fff,0 0 35px var(--glow)}
+.rare-card-back strong{font:900 clamp(38px,5vw,76px) Bungee!important;line-height:1.1}
+.rare-card-back strong.positive{color:#087b45!important;text-shadow:0 3px #a8ffd2!important}
+.rare-card-back strong.negative{color:#c0183c!important;text-shadow:0 3px #ffc2ce!important}
+.rare-result{font-size:clamp(32px,5vw,64px)!important;margin-top:10px!important;background:linear-gradient(135deg,#fff,#fff4d2)!important;text-shadow:none!important}
+@media(max-width:800px){.rare-grid{grid-template-columns:repeat(3,minmax(95px,1fr))!important}.rare-card{min-height:clamp(155px,25vh,230px)!important}}
+@media(max-width:520px){.question-clock{width:66px!important;height:66px!important;min-width:66px!important}.question-clock small{font-size:7px!important}.question-clock .elapsed-value{font-size:15px!important}.team-name{font-size:16px!important}}
+
+</style>
+
+
+<style id="hoop-v4-fit-and-team-isolation">
+html,body{min-height:100%;overflow-x:hidden}
+body:has(.game-screen.active){overflow:hidden}
+.screen{min-height:100dvh;height:auto;padding:clamp(5px,.7vw,10px);overflow:visible}
+.game-screen{height:100dvh;min-height:0;display:none;flex-direction:column;overflow:hidden}
+.game-screen.active{display:flex}
+.game-head{flex:0 0 auto;flex-wrap:nowrap;min-height:66px;padding:6px clamp(8px,1.4vw,18px);gap:8px}
+.game-content{flex:1 1 auto;min-height:0;overflow:hidden;padding:clamp(5px,.8vw,12px);gap:clamp(5px,.8vw,10px)}
+.team-name{font:900 clamp(18px,2.1vw,29px) 'Lilita One',Fredoka,sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:#fff;text-shadow:0 2px 0 #071b3a,0 4px 8px #000b;opacity:1}
+.scoreboard{min-width:clamp(120px,15vw,230px);padding:5px 12px;gap:7px}
+.score-number{font:900 clamp(23px,3vw,38px) 'Titan One',Bungee,sans-serif}
+.pool-title,.subtitle{width:max-content;max-width:96%;margin:clamp(3px,.6vh,8px) auto;padding:8px clamp(14px,2vw,24px);border:2px solid #fff;border-radius:18px;background:linear-gradient(135deg,#fffef2f5,#e7f7fff2);color:#123b67;box-shadow:0 5px 0 #0b315b55,0 8px 20px #06132d55;font:900 clamp(17px,2.2vw,29px) 'Lilita One',Fredoka,sans-serif;text-align:center;text-shadow:none;line-height:1.15}
+.ball-pool{flex:1 1 auto;min-height:0;width:100%;max-width:1400px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(clamp(64px,9vw,112px),1fr));grid-auto-rows:minmax(0,1fr);align-content:center;justify-items:center;align-items:center;gap:clamp(4px,.9vw,12px);padding:clamp(3px,.6vw,8px);overflow:hidden}
+.question-ball{width:min(100%,clamp(58px,10vh,112px));max-height:100%;aspect-ratio:1}
+.question-stage{width:min(100%,1200px);max-height:100%;margin:auto;padding:clamp(8px,1.2vw,16px);overflow:hidden}
+.question-stage h2{font-size:clamp(21px,3vw,38px);margin:0;flex:1}
+.question-topline{display:flex;align-items:center;justify-content:center;gap:clamp(8px,1.5vw,18px);margin:0 auto 8px;width:100%}
+.question-clock{flex:0 0 auto;margin:0;padding:5px 11px;gap:5px;border-width:2px;font-size:clamp(15px,1.8vw,23px);box-shadow:0 3px 0 #091d3c}
+.question-clock small{font-size:clamp(9px,1vw,12px)}
+.question-image{max-height:22vh;margin:5px auto}
+.answer-grid{gap:clamp(6px,.8vw,10px);margin-top:clamp(6px,1vh,12px)}
+.answer-btn{min-height:clamp(48px,8vh,72px);font-size:clamp(16px,2vw,25px);padding:7px}
+.stage-actions{margin-top:7px}
+.two-team-layout{flex:1;min-height:0;height:100%;overflow:hidden;gap:8px}
+.team-panel{height:100%;min-height:0}
+.team-panel .game-head{min-height:48px;flex-wrap:nowrap}
+.team-panel .team-name{font-size:clamp(15px,1.6vw,22px)}
+.team-panel .scoreboard{min-width:0}
+.team-panel .game-content{overflow:hidden;min-height:0}
+.team-panel .question-stage{width:100%;max-height:100%;overflow:hidden}
+.team-panel .question-stage h2{font-size:clamp(16px,1.8vw,25px)}
+.team-panel .question-clock{padding:3px 8px}
+.team-panel .question-image{max-height:14vh}
+.team-panel .answer-btn{min-height:clamp(42px,6.5vh,60px)}
+.team-panel .ball-pool{grid-template-columns:repeat(auto-fit,minmax(54px,1fr))}
+.team-panel .question-ball{width:min(100%,clamp(48px,7vh,78px))}
+.team-panel .feedback{position:absolute!important;inset:0!important;width:100%;height:100%;z-index:60;padding:8px;background:#06152de8}
+.team-panel .feedback-inner{width:100%;min-height:0;height:100%;gap:7px}
+.team-panel .feedback-inner img{max-width:85%;max-height:38vh}
+.team-panel .feedback-score{font-size:clamp(32px,5vw,64px)}
+.team-panel .rare-overlay{position:absolute!important;inset:0!important;width:100%;height:100%;padding:8px;z-index:90}
+.team-panel .rare-overlay h2{font-size:clamp(17px,2vw,28px);margin:4px}
+.team-panel .rare-overlay>p{font-size:clamp(13px,1.4vw,18px);margin:4px}
+.team-panel .rare-grid{grid-template-columns:repeat(5,minmax(0,1fr));width:100%;gap:clamp(3px,.6vw,8px)}
+.team-panel .rare-card{min-height:0;width:100%;height:min(39vh,250px);font-size:clamp(14px,1.6vw,22px)}
+.team-panel .rare-card span{font-size:clamp(19px,2vw,29px)}
+.team-panel .floating-score-local{position:absolute;z-index:130;pointer-events:none;font:900 clamp(26px,4vw,48px) 'Titan One',Bungee,sans-serif;text-shadow:0 3px 8px #000b;animation:localFly 1.05s cubic-bezier(.2,.7,.25,1) forwards}
+.team-panel .floating-score-local.plus{color:#ffdf4e}.team-panel .floating-score-local.minus{color:#ff5266}
+@keyframes localFly{0%{opacity:0;transform:translate(-50%,0) scale(.6)}15%{opacity:1;transform:translate(-50%,-18px) scale(1.12)}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),var(--dy)) scale(.35)}}
+@media(max-width:720px){.screen{padding:4px}.game-head{min-height:54px;gap:4px;padding:4px}.scoreboard{min-width:0;padding:4px 7px}.team-name{font-size:clamp(13px,3vw,19px)}.score-number{font-size:clamp(18px,4vw,26px)}.two-team-layout{grid-template-columns:repeat(2,minmax(0,1fr));overflow:hidden}.team-panel{min-height:0}.team-panel .question-stage h2{font-size:clamp(14px,2vw,19px)}.team-panel .answer-grid{grid-template-columns:1fr}.team-panel .answer-btn{min-height:38px;font-size:13px}}
+@media(max-height:520px){.game-head{min-height:44px;padding:3px 6px}.game-content{padding:3px;gap:3px}.pool-title,.subtitle{font-size:16px;padding:5px 10px;margin:2px auto}.question-stage{padding:5px}.question-image{max-height:14vh}.answer-btn{min-height:38px}.team-panel .question-image{max-height:10vh}.team-panel .rare-card{height:32vh}}
+
+</style>
+
+
+<style id="hoop-requested-polish-nov22">
+/* Fullscreen controls and a balanced one-screen scoreboard */
+.one-head{display:grid!important;grid-template-columns:minmax(145px,1fr) auto minmax(145px,1fr)!important;align-items:center!important;gap:clamp(6px,1vw,16px)!important}
+.one-head>#oneScoreA{justify-self:start}.one-head>#oneScoreB{justify-self:end}
+.one-head-center{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+.one-head-center .timer{min-width:64px;text-align:center}
+.team-name,.scoreboard .team-name{font-family:'Press Start 2P','Lilita One',sans-serif!important;font-size:clamp(11px,1.1vw,17px)!important;letter-spacing:.4px!important;line-height:1.45}
+.game-head .btn{white-space:nowrap;padding:7px 10px;font-size:13px}
+.game-screen .game-head .game-audio input{width:clamp(48px,5vw,76px)}
+/* tutorial pages use the full viewport with concise, visual instructions */
+#tutorial{height:100dvh;min-height:100dvh;overflow:hidden;padding:clamp(8px,1.4vw,20px)!important}
+.tutorial-card{width:96vw!important;max-width:1600px!important;height:94dvh;min-height:0!important;padding:clamp(14px,2.2vh,28px) clamp(16px,3vw,42px)!important;overflow:hidden;display:flex;flex-direction:column;justify-content:space-evenly}
+.tutorial-card h2{font-family:'Lilita One',Fredoka,sans-serif!important;font-size:clamp(28px,4.2vw,58px)!important;margin:5px 0!important}
+.tutorial-card p{font-family:'Comic Neue',cursive!important;font-size:clamp(17px,2vw,27px)!important;line-height:1.25!important;white-space:pre-line;max-width:1200px;margin:5px auto!important}
+.tutorial-visual{flex:1;min-height:0!important;max-height:48vh;margin:clamp(8px,1.5vh,18px) auto!important;width:100%;align-content:center}
+.tutorial-columns{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,2vw,26px);align-items:stretch}
+.mode-demo,.score-demo{background:linear-gradient(145deg,#f4fbff,#fff);border:3px solid #c6e8ff;border-radius:20px;padding:clamp(10px,1.6vw,22px);box-shadow:0 7px 0 #1c5c8b33;display:flex;flex-direction:column;justify-content:center;gap:12px;color:#173b68;font-family:'Comic Neue',cursive;font-size:clamp(15px,1.8vw,24px);font-weight:900}
+.mode-demo>strong,.score-demo>strong{font:900 clamp(17px,2vw,26px) 'Lilita One',sans-serif;color:#1c5b91}
+.mini-score,.mini-split,.mini-answers{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mini-score b,.mini-split>div,.mini-answers b{background:#e6f5ff;border:2px solid #8acdf2;border-radius:12px;padding:10px;color:#174477}
+.mini-score b:last-child{background:#ffe9ef;border-color:#f6a4b8;color:#9b2945}
+.mini-turn,.mini-reveal{background:#fff4d4;border-radius:12px;padding:12px;color:#6a4811}
+.mini-answers{grid-template-columns:repeat(4,1fr)}.mini-answers b{font-size:clamp(20px,3vw,34px)}
+.mini-reveal .btn{margin:8px auto}.score-demo b{font:900 clamp(24px,3vw,42px) Bungee}.score-demo b small{font:700 14px 'Comic Neue';display:block}.score-demo .gold{color:#c58a00}.score-demo .green{color:#138451}.score-demo .red{color:#d82f4f}
+.tutorial-card .row{flex:0 0 auto}
+/* rare card result remains readable on the flipped card */
+.rare-overlay{z-index:10000!important;gap:clamp(8px,1.5vh,18px);overflow:auto}
+.rare-overlay h2{margin:4px 0;font-size:clamp(24px,4vw,48px)!important}
+.rare-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important;width:min(1250px,96vw)!important;gap:clamp(7px,1.2vw,16px)!important}
+.rare-card{height:clamp(180px,34vh,330px)!important;min-height:0!important}
+.rare-card-back{background:#fff!important;opacity:1!important}
+.rare-card-back strong{font-size:clamp(30px,4.2vw,66px)!important}
+.rare-result{color:#17365f!important;background:#fff!important;border:4px solid #ffe16c!important;box-shadow:0 7px 0 #061a3b55!important;text-shadow:none!important;margin:4px 0!important;padding:10px 20px!important}
+.rare-home{font-size:clamp(17px,2vw,23px)!important;padding:12px 28px!important}
+.ident-revealed{margin:12px auto;padding:12px 18px;background:#fff;border:3px solid #ffe16c;border-radius:14px;color:#143d6a;font:900 clamp(20px,2.6vw,34px) 'Comic Neue',cursive;max-width:90%}
+.ident-judge{display:flex;justify-content:center;gap:14px;margin-top:12px;flex-wrap:wrap}
+@media(max-width:800px){.one-head{grid-template-columns:auto 1fr auto!important}.one-head-center{gap:4px}.one-head-center .tool-pill{padding:4px}.one-head-center .btn{font-size:11px;padding:5px 7px}.rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.rare-card{height:clamp(130px,22vh,200px)!important}.tutorial-columns{gap:8px}.mode-demo,.score-demo{padding:8px;gap:6px}}
+@media(max-width:560px){.one-head{grid-template-columns:1fr 1fr!important}.one-head>#oneScoreA{grid-column:1;grid-row:1}.one-head>#oneScoreB{grid-column:2;grid-row:1}.one-head-center{grid-column:1/-1;grid-row:2}.tutorial-card{width:98vw!important;height:96dvh;padding:10px!important}.tutorial-card p{font-size:16px!important}.tutorial-card h2{font-size:27px!important}.tutorial-visual{max-height:44vh}.tutorial-columns{grid-template-columns:1fr!important;overflow:auto}.mode-demo,.score-demo{font-size:14px}.rare-overlay h2{font-size:21px!important}.rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.rare-card{height:130px!important}.rare-result{font-size:26px!important}}
+
+
+/* Requested refinements: compact tutorial copy and solid, centered rare cards. */
+.tutorial-card h2:empty,.tutorial-card p:empty{display:none!important}
+.tutorial-visual.tutorial-rare{display:grid!important;grid-template-columns:repeat(3,minmax(80px,130px));grid-template-rows:repeat(2,auto);justify-content:center;align-content:center;gap:clamp(8px,1.2vw,16px);}
+.tutorial-visual.tutorial-rare .demo-card{width:100%;height:clamp(90px,17vh,145px);margin:0;border:3px solid #fff;background:linear-gradient(145deg,#ffbd55,#d85b1d);font:900 clamp(20px,2.4vw,32px) Bungee;color:#fff;text-shadow:0 2px 4px #70300b;animation:none}
+.rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:auto;justify-items:center;align-items:center}
+.team-panel .rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:repeat(2,auto)!important;width:min(100%,650px)!important}
+.rare-grid.has-selection{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:1fr!important;place-items:center;min-height:clamp(180px,34vh,330px)}
+.rare-grid.has-selection .rare-card{width:min(100%,clamp(170px,30vw,300px));height:clamp(180px,34vh,330px)!important}
+.rare-card-front{background:linear-gradient(145deg,#ffcf70 0%,#f18b32 52%,#bd4c16 100%)!important;opacity:1!important;border:4px solid #fff;box-shadow:inset 0 0 0 3px #ffffff35,0 8px 18px #0005}
+.rare-card-back{background:#fffdf4!important;opacity:1!important;border:5px solid #ffe16c!important;box-shadow:inset 0 0 0 2px #f5d98b,0 8px 20px #0005!important}
+.rare-card-face{backface-visibility:hidden!important;-webkit-backface-visibility:hidden!important}
+.rare-result{display:none!important}
+.ball-magic-flash{display:none!important}
+@media(max-width:800px){.tutorial-visual.tutorial-rare{grid-template-columns:repeat(3,minmax(65px,105px))!important;grid-template-rows:repeat(2,auto)!important}.team-panel .rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+</style>
+
+
+<style id="hoop-latest-requested-polish">
+/* Pixel-arcade headings for the tutorial and rare-card screen. */
+.step-tag{font-family:'Press Start 2P',monospace!important;font-size:clamp(10px,1.25vw,16px)!important;letter-spacing:1px;padding:12px 16px!important;border-radius:10px!important}
+.tutorial-card h2{font-family:'Press Start 2P',monospace!important;font-size:clamp(20px,3.2vw,42px)!important;line-height:1.5!important;color:#1b5685!important;text-shadow:3px 3px 0 #f5bd52!important}
+.tutorial-card p{font-size:clamp(22px,2.8vw,36px)!important;font-weight:800!important}
+.tutorial-finish{min-height:clamp(220px,34vh,360px)!important;align-content:center}
+.finish-demo{min-height:190px;justify-content:center!important;align-items:center;text-align:center}
+.finish-demo strong{font:900 clamp(20px,2.3vw,30px) 'Press Start 2P',monospace;color:#1b5685;line-height:1.6}
+.finish-demo span{font:800 clamp(21px,2.4vw,32px) 'Comic Neue',cursive;color:#17233f;line-height:1.25}
+.finish-icon{font-size:clamp(48px,6vw,82px);line-height:1.1}
+.finish-winner{grid-column:1/-1;font:900 clamp(23px,3vw,38px) Fredoka;color:#b77900;text-align:center;padding:8px}
+.rare-overlay{gap:clamp(12px,2vh,22px)!important}
+.rare-overlay h2{font-family:'Press Start 2P',monospace!important;font-size:clamp(18px,2.6vw,32px)!important;line-height:1.6!important;margin:4px 0 10px!important;color:#fff06a!important}
+.rare-overlay>p{font:800 clamp(18px,2.2vw,27px) Fredoka!important;margin:0!important}
+.rare-grid{grid-template-columns:repeat(3,minmax(90px,clamp(105px,15vw,175px)))!important;gap:clamp(8px,1.5vw,16px)!important;width:min(680px,96%)!important}
+.rare-card{height:clamp(145px,24vh,245px)!important;min-height:0!important;width:100%!important;animation:none!important}
+.rare-grid.has-selection .rare-card{width:min(100%,clamp(155px,24vw,245px))!important;height:clamp(155px,25vh,255px)!important}
+.rare-card.selected{animation:cardFlip .75s ease forwards!important}
+.rare-card-front{background:linear-gradient(145deg,#ffcf70 0%,#f18b32 52%,#bd4c16 100%)!important;opacity:1!important}
+.rare-home{font:900 clamp(14px,1.6vw,20px) 'Press Start 2P',monospace!important;padding:12px 16px!important}
+.rare-choice-overlay{z-index:10001!important}
+.rare-choice-actions{display:flex;gap:clamp(12px,2vw,24px);justify-content:center;align-items:center;flex-wrap:wrap;width:min(760px,96%)}
+.rare-choice-btn{font:900 clamp(14px,1.6vw,21px) 'Press Start 2P',monospace!important;line-height:1.6;padding:18px 20px!important;min-height:76px}
+.team-panel .rare-grid{grid-template-columns:repeat(3,minmax(65px,1fr))!important;width:96%!important;gap:6px!important}
+.team-panel .rare-card{height:clamp(100px,17vh,155px)!important;min-height:0!important}
+.team-panel .rare-overlay h2{font-size:clamp(12px,1.5vw,20px)!important}
+.team-panel .rare-home{font-size:clamp(9px,1vw,13px)!important;padding:9px 11px!important}
+@media(max-width:700px){.rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.rare-card{height:clamp(115px,20vh,180px)!important}.rare-choice-btn{font-size:11px!important;padding:12px!important}.tutorial-finish{overflow:auto}.finish-demo{min-height:130px}}
+</style>
+
+<style id="hoop-final-rare-card-and-audio-fix">
+/* Final tutorial slide: concise, balanced visual-only finish screen. */
+.tutorial-finish{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:stretch!important;justify-content:center!important;gap:clamp(16px,3vw,34px)!important;min-height:clamp(210px,34vh,360px)!important;width:min(900px,100%)!important;margin:clamp(10px,2vh,22px) auto!important}
+.finish-demo{min-height:clamp(190px,30vh,300px)!important;padding:clamp(16px,2.5vw,30px)!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;gap:clamp(10px,2vh,20px)!important;text-align:center!important}
+.finish-demo strong{font:900 clamp(16px,2vw,25px) 'Press Start 2P',monospace!important;line-height:1.7!important;overflow-wrap:anywhere}
+.finish-icon{font-size:clamp(54px,7vw,92px)!important;line-height:1.1!important}
+.finish-symbol{font-size:clamp(40px,5vw,64px)!important;line-height:1!important}
+/* Real-card proportions, solid surfaces, centered pixel lettering, and safe text bounds. */
+.rare-overlay{overflow:auto!important;justify-content:center!important;padding:clamp(12px,2vh,24px)!important;gap:clamp(10px,1.6vh,18px)!important}
+.rare-overlay h2{flex:0 0 auto!important;margin:0!important}
+.rare-grid{grid-template-columns:repeat(3,minmax(0,clamp(105px,16vw,180px)))!important;grid-auto-rows:clamp(145px,24vh,220px)!important;gap:clamp(9px,1.5vw,17px)!important;width:auto!important;max-width:96vw!important;justify-content:center!important;align-content:center!important}
+.rare-card{width:100%!important;height:100%!important;min-height:0!important;aspect-ratio:2.5/3.5!important;padding:0!important;overflow:hidden!important;border:4px solid #fff!important;border-radius:15px!important;background:#d96d24!important;box-shadow:0 0 0 2px #e8c56b,0 8px 0 #623719,0 12px 22px #0008,0 0 18px var(--glow)!important;animation:none!important;perspective:1000px!important}
+.rare-card:before{content:'✦  ✧  ✦'!important;position:absolute!important;inset:8px!important;border:1px solid #fff9!important;border-radius:9px!important;display:flex!important;align-items:flex-start!important;justify-content:center!important;padding-top:7px!important;font:14px 'Press Start 2P',monospace!important;color:#fff9!important;opacity:1!important;pointer-events:none!important;z-index:2!important}
+.rare-card-inner{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;display:block!important;transform-style:preserve-3d!important;}
+.rare-card-face{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;box-sizing:border-box!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:clamp(6px,1vh,12px)!important;padding:clamp(10px,1.2vw,16px)!important;border-radius:10px!important;overflow:hidden!important;white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important;backface-visibility:hidden!important;-webkit-backface-visibility:hidden!important;text-align:center!important;text-shadow:none!important;opacity:1!important}
+.rare-card-front{background:linear-gradient(145deg,#ffda86 0%,#f28a32 48%,#b94a17 100%)!important;color:#132c58!important;border:2px solid #ffe8ad!important;box-shadow:inset 0 0 0 3px #fff7,inset 0 0 20px #8b3b1640!important;font:900 clamp(13px,1.4vw,19px) 'Press Start 2P',monospace!important;line-height:1.6!important}
+.rare-card-front small{font:900 clamp(9px,1vw,12px) 'Press Start 2P',monospace!important;letter-spacing:0!important;line-height:1.5!important}
+.rare-card-back{transform:rotateY(180deg)!important;background:linear-gradient(145deg,#fffdf3 0%,#fff1c7 100%)!important;color:#17365f!important;border:3px solid #d6a83b!important;box-shadow:inset 0 0 0 3px #fff!important;}
+.rare-card-back strong{display:block!important;max-width:100%!important;width:100%!important;font:900 clamp(20px,3vw,38px) 'Press Start 2P',monospace!important;line-height:1.45!important;letter-spacing:-1px!important;white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important;text-align:center!important;text-shadow:2px 2px 0 #fff!important;margin:0!important;padding:0!important}
+.rare-card-back strong.positive{color:#087b45!important;text-shadow:2px 2px 0 #c7f4d8!important}
+.rare-card-back strong.negative{color:#bd2140!important;text-shadow:2px 2px 0 #ffd4dc!important}
+.rare-card-back small{display:block!important;max-width:100%!important;font:900 clamp(8px,1vw,11px) 'Press Start 2P',monospace!important;line-height:1.7!important;letter-spacing:0!important;color:#243d67!important;overflow-wrap:anywhere!important;text-align:center!important}
+.rare-card.selected{animation:cardFlip .75s ease forwards!important;z-index:5!important}
+.rare-grid.has-selection{grid-template-columns:minmax(0,clamp(170px,25vw,270px))!important;grid-auto-rows:clamp(190px,31vh,280px)!important;min-height:0!important;place-items:center!important}
+.rare-grid.has-selection .rare-card{width:100%!important;height:100%!important;max-width:100%!important;}
+.rare-home{margin-top:clamp(4px,1vh,12px)!important;flex:0 0 auto!important}
+@media(max-width:700px){.tutorial-finish{grid-template-columns:1fr 1fr!important;gap:8px!important}.finish-demo{min-height:180px!important}.finish-demo strong{font-size:clamp(11px,2.2vw,17px)!important}.rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:clamp(120px,21vh,170px)!important;width:min(96vw,540px)!important}.rare-grid.has-selection{grid-template-columns:minmax(0,clamp(160px,45vw,230px))!important;grid-auto-rows:clamp(170px,29vh,230px)!important}}
+@media(max-width:420px){.rare-card-back strong{font-size:clamp(16px,5vw,24px)!important}.rare-card-front{font-size:11px!important}.rare-card-front small{font-size:8px!important}}
+</style>
+
+
+<style id="hoop-v5-rare-polish-audio">
+/* Larger, premium arcade-card layout. Keep all card text inside solid card faces. */
+.rare-grid{grid-template-columns:repeat(3,minmax(0,clamp(125px,18vw,205px)))!important;grid-auto-rows:clamp(175px,27vh,250px)!important;gap:clamp(12px,1.8vw,22px)!important;width:auto!important;max-width:96vw!important}
+.rare-card{border:5px solid #fff7d6!important;border-radius:20px!important;box-shadow:0 0 0 3px #d8a63c,0 10px 0 #573014,0 17px 30px #000b,0 0 28px var(--glow)!important;background:linear-gradient(145deg,#ffd77b 0%,#ed8730 50%,#a93c12 100%)!important;transform-style:preserve-3d!important}
+.rare-card:after{content:'✦  ✧  ✦';position:absolute;inset:9px;border:2px solid #fff9;border-radius:12px;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;color:#fff9;font:12px 'Press Start 2P',monospace;pointer-events:none;z-index:3}
+.rare-card-inner{transition:transform .8s cubic-bezier(.18,.78,.25,1)!important}
+.rare-card-front{background:radial-gradient(circle at 25% 15%,#ffe9aa 0%,#ffb84e 30%,#e66f24 70%,#a83b12 100%)!important;border:3px solid #fff0c0!important;box-shadow:inset 0 0 0 4px #fff7,inset 0 -12px 24px #71300c55!important;color:#132c58!important;font-size:clamp(14px,1.7vw,22px)!important;letter-spacing:1px!important}
+.rare-card-front small{font-size:clamp(10px,1.15vw,14px)!important}
+.rare-card-back{background:linear-gradient(145deg,#fffef8 0%,#fff0bd 100%)!important;border:5px solid #f5cf62!important;box-shadow:inset 0 0 0 4px #fff!important}
+.rare-card-back strong{font-size:clamp(24px,3.5vw,46px)!important;line-height:1.35!important;letter-spacing:0!important;padding:0 4px!important}
+.rare-card-back small{font-size:clamp(9px,1.1vw,13px)!important;margin-top:6px!important}
+.rare-card.selected{animation:none!important;z-index:6!important}
+.rare-card.reveal-anim{animation:rareCardRise .42s cubic-bezier(.2,.8,.2,1) both!important}
+.rare-card.reveal-anim .rare-card-inner{transform:rotateY(0deg) scale(1.025)!important}
+.rare-card.flipped .rare-card-inner{transform:rotateY(180deg) scale(1.035)!important}
+@keyframes rareCardRise{0%{transform:translateY(18px) rotate(-9deg) scale(.88);filter:brightness(1)}55%{transform:translateY(-12px) rotate(5deg) scale(1.12);filter:brightness(1.3)}100%{transform:translateY(0) rotate(0) scale(1.04);filter:brightness(1)}}
+.rare-grid.has-selection{grid-template-columns:minmax(0,clamp(220px,30vw,330px))!important;grid-auto-rows:clamp(235px,38vh,345px)!important}
+.rare-grid.has-selection .rare-card{width:100%!important;height:100%!important}
+.rare-home{margin-top:clamp(8px,1.5vh,16px)!important}
+.team-panel .rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:clamp(110px,18vh,175px)!important;width:96%!important;gap:clamp(5px,.8vw,10px)!important}
+.team-panel .rare-card{height:100%!important;min-height:0!important}
+.team-panel .rare-grid.has-selection{grid-template-columns:minmax(0,clamp(150px,22vw,220px))!important;grid-auto-rows:clamp(165px,25vh,225px)!important}
+@media(max-width:700px){.rare-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:clamp(145px,23vh,205px)!important;width:min(96vw,620px)!important}.rare-grid.has-selection{grid-template-columns:minmax(0,clamp(195px,58vw,285px))!important;grid-auto-rows:clamp(205px,33vh,285px)!important}}
+@media(max-width:420px){.rare-grid{grid-auto-rows:clamp(125px,20vh,165px)!important;gap:7px!important}.rare-card-back strong{font-size:clamp(17px,5vw,26px)!important}}
+</style>
+
+
+<style id="hoop-polish-nov23">
+/* Tutorial: keep all three basketball examples in one fixed horizontal row. */
+#tutorialVisual.tutorial-balls{display:flex!important;flex-wrap:nowrap!important;justify-content:center!important;align-items:center!important;gap:clamp(10px,3vw,34px)!important;width:100%!important;min-height:clamp(125px,22vh,220px)!important;overflow:hidden!important}
+#tutorialVisual.tutorial-balls .demo-ball{flex:0 1 clamp(74px,13vw,150px)!important;width:clamp(74px,13vw,150px)!important;min-width:0!important;max-width:30%!important}
+/* Pixel-game typography for the tutorial title and step label. */
+#tutorial .step-tag{font-family:'Press Start 2P',monospace!important;font-size:clamp(9px,1.25vw,15px)!important;line-height:1.7!important;letter-spacing:.02em!important;border-radius:9px!important;padding:10px 14px!important}
+#tutorialTitle{font-family:'Press Start 2P',monospace!important;font-size:clamp(17px,3vw,34px)!important;line-height:1.55!important;color:#1b5685!important;text-shadow:3px 3px 0 #ffd45c,5px 5px 0 #173b61!important;letter-spacing:0!important}
+/* More polished, legible pixel-style final scoreboard. */
+.end-card h2{font-family:'Press Start 2P',monospace!important;font-size:clamp(16px,2.6vw,28px)!important;line-height:1.65!important;letter-spacing:0!important;text-shadow:3px 3px 0 #ffd45c!important}
+.final-scores{gap:clamp(10px,2vw,20px)!important}
+.team-final{min-width:min(210px,40vw)!important;padding:clamp(12px,2vw,20px)!important;font-family:'Press Start 2P',monospace!important;font-size:clamp(10px,1.2vw,14px)!important;line-height:1.8!important;border:3px solid #d7eaff!important;box-shadow:0 7px 0 #9bb8d1,0 12px 22px #0002!important}
+.team-final strong{display:inline-block;margin-top:7px;font-family:'Press Start 2P',monospace!important;font-size:clamp(20px,3vw,36px)!important;line-height:1.5!important;color:#145b9a!important;text-shadow:2px 2px 0 #ffe27b!important}
+.trophy{filter:drop-shadow(0 7px 5px #9a641d55)}
+@media(max-width:560px){#tutorialTitle{font-size:clamp(14px,4vw,22px)!important}.team-final{min-width:40%!important;font-size:9px!important}.team-final strong{font-size:clamp(16px,5vw,24px)!important}}
+</style>
+
+<style id="hoop-nov23-title-rare-effects">
+/* Cover title: larger, lively arcade motion; no basketball emoji above it. */
+.cover-content{padding-top:clamp(28px,6vh,72px)!important}
+.cover .title{font-size:clamp(58px,11vw,132px)!important;line-height:1.12!important;animation:hoopTitleBounce 2.8s ease-in-out infinite;transform-origin:50% 75%;}
+@keyframes hoopTitleBounce{0%,100%{transform:translateY(0) scale(1);filter:drop-shadow(0 0 0 #ffe16c)}45%{transform:translateY(-9px) scale(1.035);filter:drop-shadow(0 0 16px #ffe16caa)}65%{transform:translateY(-4px) scale(1.015)}}
+/* A brief magical orbit behind the rare-card spread when it appears. */
+.rare-overlay{isolation:isolate!important}
+.rare-aura{position:absolute;z-index:0;left:50%;top:50%;width:min(54vw,520px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;opacity:0;background:conic-gradient(from 0deg,transparent 0 22%,#6deaff 28%,#fff6a8 34%,#bd8aff 40%,transparent 48% 72%,#7fffd4 80%,transparent 88%);-webkit-mask:radial-gradient(circle,transparent 48%,#000 52%,#000 57%,transparent 62%);mask:radial-gradient(circle,transparent 48%,#000 52%,#000 57%,transparent 62%);filter:blur(2px) drop-shadow(0 0 16px #77eaff);animation:rareAuraOrbit 1.45s ease-out forwards}
+@keyframes rareAuraOrbit{0%{opacity:0;transform:translate(-50%,-50%) rotate(-35deg) scale(.62)}18%{opacity:.95}72%{opacity:.7}100%{opacity:0;transform:translate(-50%,-50%) rotate(300deg) scale(1.12)}}
+.rare-overlay h2,.rare-overlay>p,.rare-grid,.rare-home{position:relative;z-index:1}
+/* Selected card receives a clear, short-lived magical halo without obscuring its face. */
+.rare-card.selected{animation:rareSelectedGlow 1.15s ease-out both!important;z-index:6!important}
+@keyframes rareSelectedGlow{0%{filter:brightness(1);box-shadow:0 0 0 2px #fff,0 0 0 #7cecff,0 8px 0 #573014}35%{filter:brightness(1.22);box-shadow:0 0 0 4px #fff,0 0 22px 12px #7cecff,0 0 42px 20px #ffe16c,0 8px 0 #573014}100%{filter:brightness(1.06);box-shadow:0 0 0 3px #fff,0 0 18px 7px var(--glow),0 8px 0 #573014,0 14px 24px #0008}}
+/* Keep the flip/reveal animation as the dominant card motion. */
+.rare-card.selected .rare-card-inner{transition:transform .8s cubic-bezier(.18,.78,.25,1)!important}
+@media(prefers-reduced-motion:reduce){.cover .title,.rare-aura,.rare-card.selected{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+
+
+<style id="hoop-v8-audio-and-fit">
+/* Audio priority: foreground effects stay clear while background music ducks strongly. */
+#bgMusic{transition:volume .12s ease}
+/* Give question screens a viewport-fitted layout when option pictures are present. */
+#gameOne .game-content,.team-panel .game-content{overflow:hidden!important;min-height:0!important}
+.question-stage{box-sizing:border-box;max-height:100%;min-height:0;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(5px,.8vh,10px)}
+.question-stage .question-topline{flex:0 0 auto;min-height:0}
+.question-stage h2{font-size:clamp(19px,2.6vw,31px)!important;line-height:1.12!important}
+.question-image{max-height:clamp(72px,19vh,190px)!important;max-width:min(100%,400px)!important;flex:0 1 auto;min-height:0}
+.answer-grid{flex:1 1 auto;min-height:0;grid-auto-rows:minmax(0,1fr);align-content:stretch}
+.answer-btn{min-width:0;min-height:0!important;height:100%;max-height:100%;font-size:clamp(19px,2.2vw,28px)!important;line-height:1.12!important;padding:clamp(6px,.8vw,12px)!important;overflow:hidden;overflow-wrap:anywhere;word-break:normal}
+.answer-btn img{max-width:min(30%,125px)!important;max-height:clamp(42px,10vh,92px)!important;width:auto;height:auto;object-fit:contain;flex:0 1 auto}
+.question-stage:has(.answer-btn img) .question-image{max-height:clamp(55px,12vh,120px)!important}
+.question-stage:has(.answer-btn img) .answer-btn{gap:5px}
+/* Two-screen panels have half the available width: use a compact 2x2 grid and fluid text. */
+.team-panel .question-stage{width:100%;max-height:100%;gap:clamp(3px,.5vh,7px);padding:clamp(5px,.7vw,10px)!important}
+.team-panel .question-stage h2{font-size:clamp(14px,1.55vw,22px)!important;line-height:1.08!important}
+.team-panel .question-image{max-height:clamp(48px,10vh,105px)!important;max-width:90%!important}
+.team-panel .question-stage:has(.answer-btn img) .question-image{max-height:clamp(38px,7vh,72px)!important}
+.team-panel .answer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:clamp(4px,.5vw,7px)!important;flex:1 1 0;min-height:0}
+.team-panel .answer-btn{font-size:clamp(11px,1.15vw,17px)!important;line-height:1.08!important;padding:4px!important;gap:3px!important;min-height:0!important;height:100%!important;display:flex;flex-direction:column;justify-content:center}
+.team-panel .answer-btn img{max-width:90%!important;max-height:clamp(25px,6vh,58px)!important}
+.team-panel .answer-btn strong{font-size:clamp(11px,1.1vw,16px)!important}
+@media(max-height:560px){
+ .question-stage{gap:3px;padding:6px!important}
+ .question-stage h2{font-size:clamp(16px,2vw,23px)!important}
+ .question-image{max-height:12vh!important}
+ .question-stage:has(.answer-btn img) .question-image{max-height:8vh!important}
+ .answer-btn{font-size:clamp(15px,1.8vw,21px)!important}
+ .team-panel .question-image{max-height:7vh!important}
+ .team-panel .answer-btn{font-size:clamp(10px,1vw,14px)!important}
+ .team-panel .answer-btn img{max-height:4.5vh!important}
+}
+</style>
+
+
+<style id="readable-pixel-score-and-integration-preserve-v9">
+/* Readable arcade-pixel typography for score values and point feedback only. */
+.score-number,
+.team-panel .score-number {
+  font-family:'Press Start 2P',monospace!important;
+  font-weight:400!important;
+  font-size:clamp(15px,1.8vw,23px)!important;
+  line-height:1.65!important;
+  letter-spacing:-1px!important;
+  text-shadow:2px 2px 0 #56370b,0 0 8px #ffe36b55!important;
+  font-variant-numeric:tabular-nums;
+}
+.feedback-score,
+.team-panel .feedback-score {
+  font-family:'Press Start 2P',monospace!important;
+  font-weight:400!important;
+  font-size:clamp(17px,3.2vw,38px)!important;
+  line-height:1.65!important;
+  letter-spacing:-1.2px!important;
+  max-width:94%!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  text-shadow:3px 3px 0 #70450d,0 5px 12px #0008!important;
+}
+.floating-score,
+.team-panel .floating-score-local {
+  font-family:'Press Start 2P',monospace!important;
+  font-weight:400!important;
+  font-size:clamp(17px,2.5vw,30px)!important;
+  line-height:1.6!important;
+  letter-spacing:-1px!important;
+  text-shadow:2px 3px 0 #17213b,0 5px 10px #0009!important;
+}
+.team-finished .bigscore,
+.final-scores .team-final strong,
+.end-card .final-scores strong {
+  display:inline-block;
+  font-family:'Press Start 2P',monospace!important;
+  font-weight:400!important;
+  font-size:clamp(16px,2.2vw,25px)!important;
+  line-height:1.8!important;
+  letter-spacing:-1px!important;
+  overflow-wrap:anywhere;
+}
+.score-demo b {
+  font-family:'Press Start 2P',monospace!important;
+  font-weight:400!important;
+  font-size:clamp(15px,1.8vw,23px)!important;
+  line-height:1.8!important;
+  letter-spacing:-1px!important;
+}
+/* Keep the already-integrated Community message bridge and Supabase auth untouched. */
+@media(max-width:560px){
+  .score-number,.team-panel .score-number{font-size:clamp(13px,3.2vw,18px)!important}
+  .feedback-score,.team-panel .feedback-score{font-size:clamp(14px,4vw,23px)!important}
+  .floating-score,.team-panel .floating-score-local{font-size:clamp(14px,3.8vw,21px)!important}
+  .team-finished .bigscore,.final-scores .team-final strong,.end-card .final-scores strong{font-size:clamp(13px,3.3vw,19px)!important}
+}
+</style>
+
+<style id="v14-trophy-image-assets">
+.trophy img{
+  display:block;
+  width:clamp(76px,10vw,128px);
+  height:clamp(76px,10vw,128px);
+  object-fit:contain;
+  margin:0 auto;
+  filter:drop-shadow(0 7px 7px rgba(80,55,20,.25));
+}
+.two-mode-final-card .trophy img{
+  width:clamp(82px,10vw,132px);
+  height:clamp(82px,10vw,132px);
+}
+.trophy-image-inline{
+  display:inline-block;
+  width:1.35em;
+  height:1.35em;
+  object-fit:contain;
+  vertical-align:middle;
+}
+.finish-demo .finish-symbol .trophy-image-inline{
+  width:1.5em;
+  height:1.5em;
+}
+</style>
+
+</head>
+<body>
+<section id="authScreen" class="auth">
+ <div class="auth-card"><div style="font-size:48px">🏀</div><h1 id="gameTitle">Hoop It Up! Premium</h1><p>Log in using your Teacher Khen Learning Hub account.</p>
+ <form id="loginForm"><input id="email" type="email" placeholder="Email address" autocomplete="username" required><input id="password" type="password" placeholder="Password" autocomplete="current-password" required><button id="loginButton" class="btn" type="submit">Log In</button></form>
+ <button id="signupButton" class="btn blue" type="button">Create Account</button><button id="resetButton" class="btn dark" type="button">Forgot Password?</button>
+ <div id="message" class="auth-message" role="status" aria-live="polite">Connecting to membership system...</div><p class="muted" style="color:#d6e1f2">Creating an account does not automatically grant Premium access.</p>
+ </div>
+</section>
+
+
+<section id="cover" class="screen cover active">
+ <div class="corner-tools"><div id="premium-memberBar" class="member-bar hidden"><button id="logoutButton" type="button">Log Out</button></div><button id="fullscreenBtn" class="btn small dark">⛶ Fullscreen</button><button id="musicToggle" class="btn small dark" aria-pressed="true">🔊 Music On</button><label class="tool-pill">♪ Music <input id="musicVolume" type="range" min="0" max="100" value="35" aria-label="Music volume"></label><label class="tool-pill">🔊 SFX <input id="sfxVolume" type="range" min="0" max="100" value="100" aria-label="Sound effects volume"></label></div>
+ <div class="cover-content"><h1 class="title">Hoop It Up!</h1><p class="subtitle">THINK FAST. ANSWER RIGHT. SHOOT FOR THE WIN!</p><div class="cover-actions"><button id="settingsBtn" class="btn blue">⚙ Settings</button><button id="playBtn" class="btn">▶ PLAY</button></div><p style="font:700 15px Fredoka;text-shadow:0 2px 5px #0008;margin-top:25px">A basketball-inspired classroom challenge</p></div>
+</section>
+
+<section id="tutorial" class="screen tutorial"><div class="tutorial-card"><div class="step-tag" id="tutorialStep">HOW TO PLAY · 1/6</div><h2 id="tutorialTitle">Welcome to Hoop It Up!</h2><p id="tutorialText"></p><div class="tutorial-visual" id="tutorialVisual"></div><div class="row" style="justify-content:center"><button id="tutorialBack" class="btn dark">← Back</button><button id="tutorialNext" class="btn blue">Next →</button><button id="skipTutorial" class="btn">Skip Tutorial</button></div></div></section>
+
+<section id="settings" class="screen"><div class="panel">
+ <div class="row between"><div><div class="step-tag">GAME SETUP</div><h2>⚙ Hoop It Up! Settings</h2></div><button id="backCover" class="btn dark small">← Cover</button></div>
+ <div class="row" style="justify-content:flex-end"><button id="exportBtn" class="btn blue small">⬇ Export JSON</button><label class="btn dark small" for="importFile">⬆ Import Question JSON</label><input id="importFile" type="file" accept=".json,application/json" class="hidden"><button id="saveBtn" class="btn green small">✓ Save</button></div>
+ <div class="divider"></div><span class="step-tag">STEP 1 · GAME OPTIONS</span>
+ <div class="grid">
+  <label class="field">Game mode<select id="gameMode"><option value="one">One-Screen Team Mode</option><option value="two">Two-Screen Team Mode (split-screen)</option></select></label>
+  <label class="field">Game duration<select id="durationMode"><option value="complete">Complete All Questions</option><option value="timed">Time Mode</option></select></label>
+  <label class="field" id="minutesWrap">Time limit<select id="timeLimit"><option value="5">5 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option><option value="20">20 minutes</option></select></label>
+ </div>
+ <div class="row" style="margin-top:12px"><label style="font-weight:900;color:#29415e"><input id="randomizeTeams" type="checkbox" checked> Randomize question order independently for both teams (Two-Screen Mode)</label></div>
+ <p class="muted">When disabled, both teams follow the same question order. Their scores, timers, answers, and progress remain independent.</p>
+ <p class="muted">This game starts with an empty question pool. Create your own questions or import your own Question JSON file. Importing a file replaces the current question pool.</p><div class="divider"></div><span class="step-tag">STEP 2 · CREATE QUESTIONS</span>
+ <div class="grid">
+  <label class="field">Question type<select id="qType"><option value="mc">Multiple Choice</option><option value="id">Identification</option></select></label>
+  <label class="field">Base points<select id="qPoints"><option value="10">🏀 Slam Dunk · 10 points</option><option value="5">⭐ Regular Shot · 5 points</option><option value="3">🎯 Quick Shot · 3 points</option></select></label>
+  <label class="field">Question text<input id="qText" type="text" placeholder="Type your question here"></label>
+  <label class="field">Accepted answer (identification)<input id="qAnswer" type="text" placeholder="Required for identification"></label>
+ </div>
+ <div class="grid" style="margin-top:10px"><div class="field"><span>Question image (optional)</span><div class="fileline"><input id="qImage" type="file" accept="image/*"><button class="btn pink small hidden" id="removeQImage" type="button">✕ Remove</button></div><img id="qImagePreview" class="thumb hidden" alt="Question image preview"></div></div>
+ <div id="optionsEditor" style="margin-top:12px"><h3>Answer choices</h3><div class="option-editor" id="optionEditor"></div></div>
+ <div class="toolbar"><button id="addQuestionBtn" class="btn">＋ Add Question</button><button id="clearEditorBtn" class="btn dark">Clear Form</button></div>
+ <div class="notice">Identification answers are checked without case sensitivity and with extra spaces removed. You can configure one accepted answer per question in this first version.</div>
+ <div class="row between" style="margin-top:15px"><h3 style="margin:0">Question Pool <span id="questionCount">(0)</span></h3><span class="muted">Edit or delete any question below.</span></div>
+ <div id="questionList" class="question-list"></div>
+ <div class="toolbar"><button id="settingsPlayBtn" class="btn green">▶ Save & Return to Cover</button></div>
+ </div></section>
+
+<section id="gameOne" class="screen game-screen"><div class="game-head one-head"><div class="scoreboard" id="oneScoreA"><div><div class="team-name">🔵 TEAM A</div><div class="score-number" id="oneScoreAValue">0</div></div></div><div class="one-head-center"><div class="timer" id="oneTimer">--:--</div><label class="tool-pill game-audio">♪ <input id="musicVolumeGame" type="range" min="0" max="100" value="35" aria-label="Music volume"></label><label class="tool-pill game-audio">🔊 <input id="sfxVolumeGame" type="range" min="0" max="100" value="100" aria-label="Sound effects volume"></label><button id="oneMusicToggle" class="btn small dark">♪ Music</button><button id="oneFullscreen" class="btn small dark">⛶ Fullscreen</button><button id="oneHome" class="btn small dark">⌂ Cover</button></div><div class="scoreboard red" id="oneScoreB"><div><div class="team-name">🔴 TEAM B</div><div class="score-number" id="oneScoreBValue">0</div></div></div></div><div class="game-content" id="oneContent"></div></section>
+<section id="gameTwo" class="screen game-screen"><div class="game-head"><div style="font:900 22px 'Comic Neue',cursive;color:#ffe16b">HOOP IT UP!</div><label class="tool-pill game-audio">♪ <input id="musicVolumeTwo" type="range" min="0" max="100" value="35" aria-label="Music volume"></label><label class="tool-pill game-audio">🔊 <input id="sfxVolumeTwo" type="range" min="0" max="100" value="100" aria-label="Sound effects volume"></label><button id="twoMusicToggle" class="btn small dark">♪ Music</button><button id="twoFullscreen" class="btn small dark">⛶ Fullscreen</button><button id="twoHome" class="btn small dark">⌂ Cover</button></div><div class="two-team-layout"><section class="team-panel" id="teamPanelA"></section><section class="team-panel" id="teamPanelB"></section></div></section>
+<audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
+<audio id="soundClick" src="click.mp3" preload="auto"></audio><audio id="soundDunk" src="dunk.mp3" preload="auto"></audio><audio id="soundFive" src="5points.mp3" preload="auto"></audio><audio id="soundThree" src="3points.mp3" preload="auto"></audio><audio id="soundWrong" src="wrong.mp3" preload="auto"></audio><audio id="soundRight" src="right.mp3" preload="auto"></audio><audio id="soundRare" src="rare.mp3" preload="auto"></audio><audio id="soundReveal" src="reveal.mp3" preload="auto"></audio><audio id="soundWinner" src="winner.mp3" preload="auto"></audio>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id);const screens=['cover','tutorial','settings','gameOne','gameTwo'];
+const ASSETS={background:'background.gif',gameBackground:'backgroundgame.png',ball:'ball.png',dunkGif:'dunk.gif',fiveGif:'5points.gif',threeGif:'3points.gif',wrongGif:'wrong.gif'};
+const CARD_DECK=[{name:'BONUS',points:10,color:'blue',label:'+10'},{name:'BONUS',points:5,color:'green',label:'+5'},{name:'JACKPOT',points:20,color:'purple',label:'+20'},{name:'PENALTY',points:-10,color:'yellow',label:'−10'},{name:'PENALTY',points:-15,color:'red',label:'−15'},{name:'DOUBLE SCORE',points:'x2',color:'blue',label:'×2'}];
+let previousRareCardOrder='';
+const DEFAULTS={gameMode:'one',durationMode:'complete',timeLimit:5,randomizeTeams:true,questions:[]};
+let config=structuredClone(DEFAULTS),editingId=null,qImageData='',optionImages=['','','',''];let tutorialIndex=0,musicOn=true,gameRunning=false,oneState=null,twoStates=[null,null],oneInterval=null,twoInterval=null,activeScreen='cover';
+setInterval(()=>{document.querySelectorAll('.question-stage').forEach(stage=>{const el=stage.querySelector('.elapsed-value');if(!el)return;const name=stage.closest('#teamPanelA')?'A':stage.closest('#teamPanelB')?'B':null;const team=name?(twoStates[name==='A'?0:1]):(oneState?.teams?.[oneState.index]||oneState);if(team?.current&&team.startedAt)el.textContent=((performance.now()-team.startedAt)/1000).toFixed(1)+'s'})},100);
+const uid=()=>Math.random().toString(36).slice(2)+Date.now().toString(36);
+function showScreen(id){screens.forEach(s=>$(s).classList.toggle('active',s===id));activeScreen=id;syncMusic();}
+function safeText(v){return String(v??'')}
+function normalize(v){return String(v??'').trim().replace(/\s+/g,' ').toLocaleLowerCase()}
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function compressImageDataURL(source,maxDimension=1200,quality=.72){return new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>{try{const scale=Math.min(1,maxDimension/Math.max(img.width,img.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));const ctx=canvas.getContext('2d',{alpha:false});ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0,canvas.width,canvas.height);let result=canvas.toDataURL('image/jpeg',quality);if(result.length>900000){result=canvas.toDataURL('image/jpeg',.58)}resolve(result)}catch(e){reject(e)}};img.onerror=()=>reject(new Error('Could not process this image.'));img.src=source})}
+function readFile(file){return new Promise((resolve,reject)=>{if(!file)return resolve('');if(!file.type.startsWith('image/'))return reject(new Error('Please select an image file.'));const reader=new FileReader();reader.onerror=()=>reject(reader.error||new Error('Could not read this image.'));reader.onload=async()=>{try{resolve(await compressImageDataURL(String(reader.result),1200,.72))}catch(e){reject(e)}};reader.readAsDataURL(file)})}
+const activeSfx=new Set();
+function applyMusicVolume(){const a=$('bgMusic');if(!a)return;const base=Number($('musicVolume')?.value??35)/100;a.volume=base*(activeSfx.size?0.08:1)}
+function playAudio(id){const a=$(id);if(!a)return;try{a.pause();a.currentTime=0;if(id==='bgMusic'){a.volume=Number($('musicVolume').value)/100}else{a.volume=Number($('sfxVolume')?.value??100)/100;activeSfx.add(a);applyMusicVolume();const finish=()=>{activeSfx.delete(a);applyMusicVolume();a.removeEventListener('ended',finish);a.removeEventListener('error',finish)};a.addEventListener('ended',finish);a.addEventListener('error',finish)}const p=a.play();if(p?.catch)p.catch(()=>{activeSfx.delete(a);applyMusicVolume()})}catch(e){activeSfx.delete(a);applyMusicVolume()}}
+function stopAllSfxAndResumeMusic(){document.querySelectorAll('audio').forEach(a=>{if(a.id==='bgMusic')return;try{a.pause();a.currentTime=0}catch(e){}});activeSfx.clear();applyMusicVolume();const bg=$('bgMusic');if(musicOn&&bg){const p=bg.play();p?.catch?.(()=>{})}}
+function playRareResultSfx(isPositive){const id=isPositive?'soundRight':'soundWrong';playAudio(id)}
+function syncMusic(){const a=$('bgMusic');applyMusicVolume();if(musicOn){$('musicToggle').textContent='🔊 Music On';$('oneMusicToggle').textContent='♪ Music On';$('twoMusicToggle').textContent='♪ Music On';if(activeScreen!=='cover'||a.paused){const p=a.play();p?.catch?.(()=>{})}}else{a.pause();$('musicToggle').textContent='🔇 Music Off';$('oneMusicToggle').textContent='♪ Music Off';$('twoMusicToggle').textContent='♪ Music Off'}}
+function toggleMusic(){musicOn=!musicOn;syncMusic()}
+$('musicToggle').onclick=toggleMusic;$('oneMusicToggle').onclick=toggleMusic;$('twoMusicToggle').onclick=toggleMusic;$('musicVolume').oninput=()=>{ applyMusicVolume();['musicVolumeGame','musicVolumeTwo'].forEach(id=>{if($(id))$(id).value=$('musicVolume').value}) };$('sfxVolume').oninput=()=>{['sfxVolumeGame','sfxVolumeTwo'].forEach(id=>{if($(id))$(id).value=$('sfxVolume').value}) };['musicVolumeGame','musicVolumeTwo'].forEach(id=>{if($(id))$(id).oninput=()=>{ $('musicVolume').value=$(id).value;applyMusicVolume();['musicVolumeGame','musicVolumeTwo'].forEach(other=>{if($(other))$(other).value=$(id).value}) }});['sfxVolumeGame','sfxVolumeTwo'].forEach(id=>{if($(id))$(id).oninput=()=>{ $('sfxVolume').value=$(id).value;['sfxVolumeGame','sfxVolumeTwo'].forEach(other=>{if($(other))$(other).value=$(id).value}) }});
+$('fullscreenBtn').onclick=()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});else document.exitFullscreen?.()};const toggleFullscreen=()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});else document.exitFullscreen?.()};['oneFullscreen','twoFullscreen'].forEach(id=>$(id).onclick=toggleFullscreen);document.addEventListener('fullscreenchange',()=>{['fullscreenBtn','oneFullscreen','twoFullscreen'].forEach(id=>{const b=$(id);if(b)b.textContent=document.fullscreenElement?'⛶ Exit Fullscreen':'⛶ Fullscreen'})});
+$('settingsBtn').onclick=()=>{syncSettingsForm();showScreen('settings')};$('playBtn').onclick=()=>{if(!config.questions.length){alert('Please add at least one question in Settings first.');return}tutorialIndex=0;renderTutorial();showScreen('tutorial')};$('backCover').onclick=()=>showScreen('cover');$('settingsPlayBtn').onclick=()=>{saveSettings();showScreen('cover')};$('saveBtn').onclick=()=>{saveSettings();showScreen('cover')};$('oneHome').onclick=()=>{stopGames();showScreen('cover')};$('twoHome').onclick=()=>{stopGames();showScreen('cover')};
+const tutorial=[
+ ['Welcome to Hoop It Up!','Choose a basketball to open a question. Answer correctly to earn points and speed bonuses.','balls'],
+ ['Choose Your Team Mode','','modes'],
+ ['Answer the Question','','answers'],
+ ['Score Big!','','scores'],
+ ['Rare Cards Challenge','Choose one mystery card. Get +10, +5, +20, −10, −15, or ×2 your score!','rare'],
+ ['TIME TO WIN!','','finish']
+];
+function renderTutorial(){const t=tutorial[tutorialIndex];$('tutorialStep').textContent=`HOW TO PLAY · ${tutorialIndex+1}/${tutorial.length}`;$('tutorialTitle').textContent=t[0];$('tutorialTitle').classList.toggle('hidden',!t[0]);$('tutorialText').textContent=t[1];$('tutorialText').classList.toggle('hidden',!t[1]);const v=$('tutorialVisual');v.innerHTML='';v.classList.remove('tutorial-rare','tutorial-balls');if(t[2]==='balls'){v.classList.add('tutorial-balls');for(let i=1;i<=3;i++){const d=document.createElement('div');d.className='demo-ball';d.textContent=i;v.append(d)}}else if(t[2]==='modes'){v.classList.add('tutorial-columns');v.innerHTML='<div class="mode-demo"><strong>ONE-SCREEN MODE</strong><div class="mini-score"><b>TEAM A</b><b>TEAM B</b></div><div class="mini-turn">🏀 A answers → 🏀 B answers</div><small>Take turns on one screen</small></div><div class="mode-demo"><strong>TWO-SCREEN MODE</strong><div class="mini-split"><div>🔵 TEAM A<br>🏀 Question</div><div>🔴 TEAM B<br>🏀 Question</div></div><small>Answer at the same time</small></div>'}else if(t[2]==='answers'){v.classList.add('tutorial-columns');v.innerHTML='<div class="mode-demo"><strong>MULTIPLE CHOICE</strong><div class="mini-answers"><b>A</b><b>B</b><b>C</b><b>D</b></div><small>Tap the correct choice</small></div><div class="mode-demo"><strong>IDENTIFICATION</strong><div class="mini-reveal">What is this?<br><button class="btn blue small" type="button">Reveal Answer</button><div>✓ Correct　 ✕ Wrong</div></div><small>Show the answer, then judge it</small></div>'}else if(t[2]==='scores'){v.classList.add('tutorial-columns');v.innerHTML='<div class="score-demo"><strong>QUESTION POINTS</strong><b class="gold">+10</b><b class="gold">+5</b><b class="gold">+3</b></div><div class="score-demo"><strong>BONUS POINTS</strong><b class="green">+5 <small>1–5 sec</small></b><b class="green">+3 <small>6–8 sec</small></b><b class="green">+1 <small>9+ sec</small></b><b class="red">−2 <small>Wrong answer</small></b></div>'}else if(t[2]==='rare'){v.classList.add('tutorial-rare');['+10','+5','+20','−10','−15','×2'].forEach((x,i)=>{const d=document.createElement('div');d.className='demo-card';d.textContent=x;v.append(d)})}else if(t[2]==='finish'){v.classList.add('tutorial-columns','tutorial-finish');v.innerHTML='<div class="mode-demo finish-demo"><div class="finish-icon">⏱️</div><strong>TIME MODE</strong><div class="finish-symbol">⌛</div></div><div class="mode-demo finish-demo"><div class="finish-icon">🏀</div><strong>COMPLETE MODE</strong><div class="finish-symbol"><img class="trophy-image-inline" src="trophy.png" alt="Trophy"></div></div>'; }$('tutorialBack').disabled=tutorialIndex===0;$('tutorialNext').textContent=tutorialIndex===tutorial.length-1?'Start Game →':'Next →'}
+$('tutorialBack').onclick=()=>{if(tutorialIndex>0){tutorialIndex--;renderTutorial()}};$('tutorialNext').onclick=()=>{if(tutorialIndex<tutorial.length-1){tutorialIndex++;renderTutorial()}else startGame()};$('skipTutorial').onclick=()=>startGame();
+// Question editor
+function buildOptionEditor(){const host=$('optionEditor');host.innerHTML='';['A','B','C','D'].forEach((letter,i)=>{const box=document.createElement('div');box.className='option-box';const label=document.createElement('label');label.textContent='Option '+letter;const input=document.createElement('input');input.type='text';input.id='optText'+i;input.placeholder='Answer '+letter;const file=document.createElement('input');file.type='file';file.accept='image/*';file.id='optFile'+i;const preview=document.createElement('img');preview.className='thumb'+(optionImages[i]?'':' hidden');preview.id='optPreview'+i;if(optionImages[i])preview.src=optionImages[i];const remove=document.createElement('button');remove.type='button';remove.className='btn pink small';remove.textContent='✕ Remove image';remove.style.display=optionImages[i]?'inline-block':'none';file.onchange=async()=>{if(file.files[0]){try{optionImages[i]=await readFile(file.files[0]);preview.src=optionImages[i];preview.classList.remove('hidden');remove.style.display='inline-block'}catch(err){alert('Image could not be compressed: '+err.message);file.value=''}}};remove.onclick=()=>{optionImages[i]='';file.value='';preview.removeAttribute('src');preview.classList.add('hidden');remove.style.display='none'};box.append(label,input,file,preview,remove);host.append(box)})}
+buildOptionEditor();$('qType').dispatchEvent(new Event('change'));
+$('qImage').onchange=async()=>{if($('qImage').files[0]){try{qImageData=await readFile($('qImage').files[0]);$('qImagePreview').src=qImageData;$('qImagePreview').classList.remove('hidden');$('removeQImage').classList.remove('hidden')}catch(err){alert('Image could not be compressed: '+err.message);$('qImage').value=''}}};$('removeQImage').onclick=()=>{qImageData='';$('qImage').value='';$('qImagePreview').classList.add('hidden');$('removeQImage').classList.add('hidden')};
+function clearQuestionForm(){editingId=null;$('qType').value='mc';$('qPoints').value='10';$('qText').value='';$('qAnswer').value='';qImageData='';optionImages=['','','',''];$('qImage').value='';$('qImagePreview').classList.add('hidden');$('removeQImage').classList.add('hidden');buildOptionEditor();$('addQuestionBtn').textContent='＋ Add Question'}
+$('clearEditorBtn').onclick=clearQuestionForm;$('qType').onchange=()=>{$('optionsEditor').classList.toggle('hidden',$('qType').value!=='mc');$('qAnswer').parentElement.classList.toggle('hidden',$('qType').value!=='id')};
+function getFormQuestion(){const type=$('qType').value,text=$('qText').value.trim(),answer=$('qAnswer').value.trim();if(!text){alert('Please enter the question text.');return null}if(type==='id'&&!answer){alert('Please enter the accepted answer for this identification question.');return null}const options=type==='mc'?[0,1,2,3].map(i=>({text:$('optText'+i).value.trim(),image:optionImages[i]})):[];if(type==='mc'&&options.some(o=>!o.text&&!o.image)){alert('Please provide content for all four answer choices.');return null}return{id:editingId||uid(),type,text,answer,image:qImageData,points:Number($('qPoints').value),options,correctIndex:type==='mc'?Number(document.querySelector('input[name="correctOption"]:checked')?.value??0):null}}
+// The correct option is selected by radio controls added below each option box.
+function addCorrectRadios(){document.querySelectorAll('.option-box').forEach((box,i)=>{if(box.querySelector('input[name="correctOption"]'))return;const wrap=document.createElement('label');wrap.style.cssText='display:flex;align-items:center;gap:6px;font-weight:900;color:#1c5c88';const radio=document.createElement('input');radio.type='radio';radio.name='correctOption';radio.value=i;radio.checked=i===0;wrap.append(radio,document.createTextNode('Correct answer'));box.append(wrap)})}addCorrectRadios();
+const oldBuild=buildOptionEditor; // rebuild radio controls after each editor render
+const observer=new MutationObserver(()=>addCorrectRadios());observer.observe($('optionEditor'),{childList:true,subtree:true});
+$('addQuestionBtn').onclick=()=>{const q=getFormQuestion();if(!q)return;if(editingId){const ix=config.questions.findIndex(x=>x.id===editingId);if(ix>=0)config.questions[ix]=q}else config.questions.push(q);renderQuestionList();clearQuestionForm();saveLocal()};
+function renderQuestionList(){const host=$('questionList');host.innerHTML='';$('questionCount').textContent=`(${config.questions.length})`;config.questions.forEach((q,i)=>{const card=document.createElement('div');card.className='question-card';const info=document.createElement('div');const strong=document.createElement('strong');strong.textContent=`${i+1}. ${q.text}`;const detail=document.createElement('div');detail.className='muted';detail.textContent=`${q.type==='mc'?'Multiple Choice':'Identification'} · ${q.points} base points${q.image?' · question image':''}`;info.append(strong,detail);const actions=document.createElement('div');actions.className='actions';const edit=document.createElement('button');edit.className='btn blue small';edit.textContent='Edit';edit.onclick=()=>editQuestion(q.id);const del=document.createElement('button');del.className='btn pink small';del.textContent='Delete';del.onclick=()=>{if(confirm('Delete this question?')){config.questions=config.questions.filter(x=>x.id!==q.id);renderQuestionList();saveLocal()}};actions.append(edit,del);card.append(info,actions);host.append(card)})}
+function editQuestion(id){const q=config.questions.find(x=>x.id===id);if(!q)return;editingId=id;$('qType').value=q.type;$('qType').dispatchEvent(new Event('change'));$('qPoints').value=String(q.points);$('qText').value=q.text;$('qAnswer').value=q.answer||'';qImageData=q.image||'';if(qImageData){$('qImagePreview').src=qImageData;$('qImagePreview').classList.remove('hidden');$('removeQImage').classList.remove('hidden')}else{$('qImagePreview').classList.add('hidden');$('removeQImage').classList.add('hidden')}optionImages=(q.options||[]).map(o=>o.image||'');while(optionImages.length<4)optionImages.push('');buildOptionEditor();(q.options||[]).forEach((o,i)=>{if($('optText'+i))$('optText'+i).value=o.text||''});setTimeout(()=>{addCorrectRadios();const r=document.querySelector(`input[name="correctOption"][value="${q.correctIndex??0}"]`);if(r)r.checked=true},0);$('addQuestionBtn').textContent='✓ Update Question';$('qText').scrollIntoView({behavior:'smooth',block:'center'})}
+function syncSettingsForm(){ $('gameMode').value=config.gameMode;$('durationMode').value=config.durationMode;$('timeLimit').value=String(config.timeLimit);$('randomizeTeams').checked=config.randomizeTeams;$('minutesWrap').classList.toggle('hidden',config.durationMode!=='timed');renderQuestionList()}
+$('durationMode').onchange=()=>{$('minutesWrap').classList.toggle('hidden',$('durationMode').value!=='timed')};
+function saveSettings(){config.gameMode=$('gameMode').value;config.durationMode=$('durationMode').value;config.timeLimit=Number($('timeLimit').value);config.randomizeTeams=$('randomizeTeams').checked;saveLocal();}
+const DB_NAME='tk-hoop-it-up-db',DB_STORE='gameData';
+function openGameDB(){return new Promise((resolve,reject)=>{if(!('indexedDB'in window)){reject(new Error('IndexedDB unavailable'));return}const req=indexedDB.open(DB_NAME,1);req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains(DB_STORE))req.result.createObjectStore(DB_STORE)};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
+async function saveLocal(){try{const db=await openGameDB();await new Promise((resolve,reject)=>{const tx=db.transaction(DB_STORE,'readwrite');tx.objectStore(DB_STORE).put(config,'config');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});db.close();try{localStorage.setItem('tk-hoop-it-up-config-meta',JSON.stringify({count:config.questions.length,savedAt:Date.now()}))}catch(e){}}catch(e){console.warn('IndexedDB save failed',e);try{localStorage.setItem('tk-hoop-it-up-config',JSON.stringify({...config,questions:config.questions.map(q=>({...q,image:'',options:(q.options||[]).map(o=>({...o,image:''}))}))}))}catch(err){console.warn('Fallback save unavailable',err)}}}
+async function loadLocal(){try{const db=await openGameDB();const saved=await new Promise((resolve,reject)=>{const tx=db.transaction(DB_STORE,'readonly');const req=tx.objectStore(DB_STORE).get('config');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});db.close();if(saved&&Array.isArray(saved.questions))config={...structuredClone(DEFAULTS),...saved};else{const raw=localStorage.getItem('tk-hoop-it-up-config');if(raw){const savedLocal=JSON.parse(raw);config={...structuredClone(DEFAULTS),...savedLocal,questions:Array.isArray(savedLocal.questions)?savedLocal.questions:[]}}}}catch(e){console.warn('Could not restore saved game',e)}try{syncSettingsForm()}catch(e){}}
+
+function exportJSON(){saveSettings();const payload={game:'hoop-it-up',version:1,exportedAt:new Date().toISOString(),settings:{gameMode:config.gameMode,durationMode:config.durationMode,timeLimit:config.timeLimit,randomizeTeams:config.randomizeTeams},questions:config.questions};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hoop-it-up-questions.json';a.click();URL.revokeObjectURL(a.href)}
+async function importJSON(file){if(!file)return;try{const raw=await file.text();const d=JSON.parse(raw);const source=Array.isArray(d)?d:d.questions;if(!Array.isArray(source)||!source.length)throw Error('The question file must contain a non-empty questions array.');if(d.game&&d.game!=='hoop-it-up')throw Error('This JSON file belongs to a different game.');const questions=[];for(let i=0;i<source.length;i++){const q=source[i];if(!q||typeof q.text!=='string'||!q.text.trim()||!['mc','id'].includes(q.type))throw Error('Question '+(i+1)+' is invalid.');let options=Array.isArray(q.options)?q.options.map(o=>typeof o==='string'?{text:o,image:''}:{text:String(o?.text||''),image:String(o?.image||'')}):[];if(q.type==='mc'&&(options.length!==4||options.some(o=>!o.text.trim()&&!o.image)))throw Error('Question '+(i+1)+' must have four answer choices.');let image=String(q.image||'');if(image.startsWith('data:image/')){try{image=await compressImageDataURL(image,1200,.72)}catch(e){image=''}}for(let j=0;j<options.length;j++){if(options[j].image?.startsWith('data:image/')){try{options[j].image=await compressImageDataURL(options[j].image,1000,.70)}catch(e){options[j].image=''}}}questions.push({id:q.id||uid(),type:q.type,text:q.text.trim(),answer:String(q.answer||''),image,points:[3,5,10].includes(Number(q.points))?Number(q.points):5,options,correctIndex:Number.isInteger(q.correctIndex)&&q.correctIndex>=0&&q.correctIndex<4?q.correctIndex:0})}config.questions=questions;if(!Array.isArray(d)&&d.settings){config.gameMode=d.settings.gameMode==='two'?'two':'one';config.durationMode=d.settings.durationMode==='timed'?'timed':'complete';config.timeLimit=[5,10,15,20].includes(Number(d.settings.timeLimit))?Number(d.settings.timeLimit):5;config.randomizeTeams=d.settings.randomizeTeams!==false}syncSettingsForm();await saveLocal();alert('Questions imported successfully! '+questions.length+' questions are ready.')}catch(e){alert('Question import failed: '+e.message)}}
+$('exportBtn').onclick=exportJSON;$('importFile').onchange=e=>{importJSON(e.target.files?.[0]);e.target.value=''};
+// Gameplay state: each team owns its queue, score, timer, and rare-card counter.
+function makeTeam(index,questions){let order=questions.map(q=>q.id);return{index,name:index===0?'TEAM A':'TEAM B',score:0,order,used:[],current:null,startedAt:0,remaining:config.durationMode==='timed'?config.timeLimit*60:0,finished:false,fastCount:0,answerLocked:false,turnCount:0}}
+function questionsForTeam(index){const source=config.questions;if(config.gameMode==='two'&&config.randomizeTeams)return shuffle(source);return [...source]}
+function formatTime(seconds){const s=Math.max(0,Math.ceil(seconds));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function questionById(id){return config.questions.find(q=>q.id===id)}
+function remainingQuestions(team){let ids=team.order.filter(id=>!team.used.includes(id));if(!ids.length&&config.durationMode==='timed'&&!team.finished){team.used=[];if(config.gameMode==='two'&&config.randomizeTeams)team.order=shuffle(config.questions).map(q=>q.id);else team.order=config.questions.map(q=>q.id);ids=[...team.order]}return ids}
+function nextQuestion(team){if(team.finished)return null;const ids=remainingQuestions(team);if(!ids.length){team.finished=true;return null}const id=ids[0];team.current=questionById(id);team.startedAt=performance.now();team.answerLocked=false;return team.current}
+function updateScoreboard(team,mode){const val=team.score;if(mode==='one'){$(team.index===0?'oneScoreAValue':'oneScoreBValue').textContent=val}else{const node=$('teamScore'+team.index);if(node)node.textContent=val}}
+function scoreAnimation(team,delta,anchor){
+ if(config.gameMode==='two'){
+  const panel=team.index===0?$('teamPanelA'):$('teamPanelB');
+  const scoreEl=panel?.querySelector('.score-number');
+  const pr=panel.getBoundingClientRect(),sr=scoreEl?.getBoundingClientRect();
+  const start=anchor?{x:anchor.x-pr.left,y:anchor.y-pr.top}:{x:pr.width/2,y:pr.height*.65};
+  const target=sr?{x:sr.left-pr.left+sr.width/2,y:sr.top-pr.top+sr.height/2}:{x:pr.width/2,y:35};
+  const el=document.createElement('div');el.className='floating-score-local '+(delta>=0?'plus':'minus');el.textContent=(delta>0?'+':'')+delta;
+  el.style.left=start.x+'px';el.style.top=start.y+'px';el.style.setProperty('--dx',(target.x-start.x)+'px');el.style.setProperty('--dy',(target.y-start.y)+'px');panel.append(el);
+  setTimeout(()=>{el.remove();team.score+=delta;updateScoreboard(team,'two')},1050);return;
+ }
+ const start=anchor||{x:innerWidth/2,y:innerHeight/2};const target=team.index===0?{x:innerWidth*.18,y:35}:{x:innerWidth*.82,y:35};const el=document.createElement('div');el.className='floating-score '+(delta>=0?'plus':'minus');el.textContent=(delta>0?'+':'')+delta;el.style.left=start.x+'px';el.style.top=start.y+'px';el.style.setProperty('--dx',(target.x-start.x)+'px');el.style.setProperty('--dy',(target.y-start.y)+'px');document.body.append(el);setTimeout(()=>{el.remove();team.score+=delta;updateScoreboard(team,'one')},1050)
+}
+function scoreFeedback(team,base,bonus,question){const total=base+bonus;const fastAnswer=(performance.now()-team.startedAt)/1000<=5;playAudio(base===10?'soundDunk':base===5?'soundFive':'soundThree');const gif=base===10?ASSETS.dunkGif:base===5?ASSETS.fiveGif:ASSETS.threeGif;showFeedback(gif,total,team,()=>{const anchor={x:innerWidth/2,y:innerHeight*.68};scoreAnimation(team,total,anchor);const fast=fastAnswer;if(config.gameMode==='one'){if(!oneState.used.includes(question.id))oneState.used.push(question.id)}else{if(!team.used.includes(question.id))team.used.push(question.id)}team.current=null;if(fast){team.fastCount++;if(team.fastCount>=3){team.fastCount=0;setTimeout(()=>showRareChoice(team),1100);return}}setTimeout(()=>advanceAfterAnswer(team),1200)})}
+function showFeedback(gif,total,team,done){
+ const overlay=document.createElement('div');overlay.className='feedback';
+ let host=document.body;
+ if(config.gameMode==='two'){host=team.index===0?$('teamPanelA'):$('teamPanelB');overlay.style.position='absolute';overlay.style.inset='0';overlay.style.width='100%';overlay.style.height='100%';overlay.style.borderRadius='13px'}
+ const inner=document.createElement('div');inner.className='feedback-inner';
+ const img=document.createElement('img');img.src=gif;img.alt='Points animation';img.onerror=()=>img.remove();
+ const score=document.createElement('div');score.className='feedback-score';score.textContent='+'+total+' POINTS';
+ const proceed=document.createElement('button');proceed.className='btn dark';proceed.textContent='⌂ Back to Question Pool';proceed.style.display='none';
+ let closed=false;proceed.onclick=()=>{if(closed)return;closed=true;stopAllSfxAndResumeMusic();overlay.remove();done()};
+ inner.append(img,score,proceed);overlay.append(inner);host.append(overlay);
+ setTimeout(()=>{if(overlay.isConnected)proceed.style.display='inline-block'},1250)
+}
+function showWrong(team,done){
+ playAudio('soundWrong');
+ const overlay=document.createElement('div');overlay.className='feedback';
+ let host=document.body;
+ if(config.gameMode==='two'){host=team.index===0?$('teamPanelA'):$('teamPanelB');overlay.style.position='absolute';overlay.style.inset='0';overlay.style.width='100%';overlay.style.height='100%';overlay.style.borderRadius='13px'}
+ const inner=document.createElement('div');inner.className='feedback-inner';
+ const img=document.createElement('img');img.src=ASSETS.wrongGif;img.alt='Wrong answer';img.onerror=()=>img.remove();
+ const score=document.createElement('div');score.className='feedback-score negative';score.textContent='−2 POINTS';
+ inner.append(img,score);overlay.append(inner);host.append(overlay);
+ let anchor;
+ if(config.gameMode==='two'){const r=host.getBoundingClientRect();anchor={x:r.left+r.width/2,y:r.top+r.height*.68}}
+ else anchor={x:innerWidth/2,y:innerHeight*.65};
+ scoreAnimation(team,-2,anchor);
+ setTimeout(()=>{overlay.remove();done()},1450)
+}
+function showRareChoice(team){
+ const overlay=document.createElement('div');overlay.className='rare-overlay rare-choice-overlay';
+ const title=document.createElement('h2');title.textContent='RARE CARDS!';
+ const prompt=document.createElement('p');prompt.textContent='Choose your reward!';
+ const actions=document.createElement('div');actions.className='rare-choice-actions';
+ const bonus=document.createElement('button');bonus.className='btn green rare-choice-btn';bonus.textContent='+3 POINTS';
+ const reveal=document.createElement('button');reveal.className='btn blue rare-choice-btn';reveal.textContent='REVEAL A RARE CARD';
+ bonus.onclick=()=>{overlay.remove();scoreAnimation(team,3,{x:innerWidth/2,y:innerHeight*.62});setTimeout(()=>advanceAfterAnswer(team),1100)};
+ reveal.onclick=()=>{overlay.remove();showRareCards(team)};
+ actions.append(bonus,reveal);overlay.append(title,prompt,actions);
+ if(config.gameMode==='two'){
+  const host=team.index===0?$('teamPanelA'):$('teamPanelB');overlay.style.position='absolute';overlay.style.borderRadius='13px';host.append(overlay);
+ }else document.body.append(overlay);
+}
+
+function showRareCards(team){
+ const bg=$('bgMusic'),resumeMusic=musicOn&&!bg.paused;bg.pause();
+ const rareAudio=$('soundRare');let musicRestored=false;const restoreMusic=()=>{if(musicRestored)return;musicRestored=true;if(resumeMusic&&musicOn&&activeScreen.startsWith('game')){const play=bg.play();play?.catch?.(()=>{})}};
+ if(rareAudio){rareAudio.pause();rareAudio.currentTime=0;rareAudio.volume=Math.min(1,Number($('sfxVolume')?.value??90)/100*1.25);rareAudio.onended=restoreMusic;const rp=rareAudio.play();rp?.catch?.(()=>{restoreMusic()})}else restoreMusic();
+ const overlay=document.createElement('div');overlay.className='rare-overlay';let host=document.body;
+ if(config.gameMode==='two'){host=team.index===0?$('teamPanelA'):$('teamPanelB');overlay.style.position='absolute';overlay.style.borderRadius='13px'}
+ const aura=document.createElement('div');aura.className='rare-aura';aura.setAttribute('aria-hidden','true');
+ const h=document.createElement('h2');h.textContent='RARE CARDS!';
+ const grid=document.createElement('div');grid.className='rare-grid';let cards=shuffle(CARD_DECK);let orderKey=cards.map(c=>c.name+':'+c.points).join('|');if(orderKey===previousRareCardOrder){cards=[...cards.slice(1),cards[0]];orderKey=cards.map(c=>c.name+':'+c.points).join('|')}previousRareCardOrder=orderKey;let chosen=false;
+ cards.forEach((card,i)=>{const b=document.createElement('button');b.className='rare-card';const palette={red:['#ffb6c0','#b91e3c','#ff263d'],yellow:['#fff4a8','#e8ae21','#ffd42c'],green:['#c1ffe0','#27b77d','#4be7a1'],blue:['#d2f7ff','#2b9fd5','#4ad7ff'],purple:['#f2d4ff','#9650c6','#d18aff']}[card.color];b.style.background=`linear-gradient(145deg,${palette[0]},${palette[1]})`;b.style.setProperty('--glow',palette[2]);b.innerHTML='<span class="rare-card-inner"><span class="rare-card-face rare-card-front">★<small>MYSTERY</small>?</span><span class="rare-card-face rare-card-back">REVEAL</span></span>';b.setAttribute('aria-label','Mystery card '+(i+1));
+ b.onclick=()=>{if(chosen)return;chosen=true;playAudio('soundReveal');grid.querySelectorAll('button').forEach(x=>{if(x!==b)x.remove();else x.disabled=true});grid.classList.add('has-selection');b.dataset.chosen='1';const rect=b.getBoundingClientRect(),hr=overlay.getBoundingClientRect();b.style.setProperty('--fly-x',(hr.left+hr.width/2-(rect.left+rect.width/2))+'px');b.style.setProperty('--fly-y',(hr.top+hr.height/2-(rect.top+rect.height/2))+'px');b.classList.add('selected');
+  const back=b.querySelector('.rare-card-back');const delta=card.points==='x2'?team.score:card.points;const label=card.points==='x2'?'×2':(card.points>0?'+':'')+card.points;back.innerHTML=`<strong class="${delta>=0?'positive':'negative'}">${label}</strong><small>${card.points==='x2'?'SCORE DOUBLED':'POINTS'}</small>`;
+  b.classList.add('reveal-anim');
+  setTimeout(()=>{b.classList.add('flipped');playRareResultSfx(delta>=0);scoreAnimation(team,delta,{x:innerWidth/2,y:innerHeight*.68});const home=document.createElement('button');home.className='btn dark rare-home';home.textContent='⌂ Back to Questions';home.onclick=()=>{stopAllSfxAndResumeMusic();overlay.remove();restoreMusic();if(config.gameMode==='two')renderTeamPanel(team.index);else renderOnePool()};overlay.append(home);
+  },420);
+ };grid.append(b)});
+ overlay.append(aura,h,grid);host.append(overlay);
+}
+
+function advanceAfterAnswer(team){if(config.gameMode==='one'){if(oneState?.teams){oneState.index=1-oneState.index;renderOnePool()}else renderOnePool()}else{renderTeamPanel(team.index)}}
+function teamAnswer(team,correct,question,answerButton){if(!team||team.finished||team.answerLocked)return;team.answerLocked=true;if(answerButton)answerButton.disabled=true;if(correct){const seconds=(performance.now()-team.startedAt)/1000;const bonus=seconds<=3?5:seconds>=6&&seconds<=8?3:seconds>=9?1:0;scoreFeedback(team,question.points,bonus,question)}else{if(config.gameMode==='one'){if(!oneState.used.includes(question.id))oneState.used.push(question.id)}else{if(!team.used.includes(question.id))team.used.push(question.id)}team.current=null;showWrong(team,()=>advanceAfterAnswer(team))}}
+function buildQuestionStage(team,question,compact=false){const stage=document.createElement('div');stage.className='question-stage';const topline=document.createElement('div');topline.className='question-topline';const title=document.createElement('h2');title.textContent=question.text;const clock=document.createElement('div');clock.className='question-clock';clock.innerHTML='<small>TIME</small><span class="elapsed-value">0.0s</span>';topline.append(title,clock);stage.append(topline);if(question.image){const img=document.createElement('img');img.className='question-image';img.src=question.image;img.alt='Question image';stage.append(img)}if(question.type==='mc'){const answers=document.createElement('div');answers.className='answer-grid';question.options.forEach((o,i)=>{const b=document.createElement('button');b.className='answer-btn';const letter=document.createElement('strong');letter.textContent=String.fromCharCode(65+i)+'. ';b.append(letter);if(o.image){const img=document.createElement('img');img.src=o.image;img.alt='';b.append(img)}if(o.text){const span=document.createElement('span');span.textContent=o.text;b.append(span)}b.onclick=()=>teamAnswer(team,i===question.correctIndex,question,b);answers.append(b)});stage.append(answers)}else{const reveal=document.createElement('button');reveal.className='btn blue';reveal.textContent='👁 Reveal Answer';const result=document.createElement('div');result.className='ident-revealed hidden';result.setAttribute('aria-live','polite');result.textContent='Answer: '+question.answer;const judge=document.createElement('div');judge.className='ident-judge hidden';const correct=document.createElement('button');correct.className='btn green';correct.textContent='✓ Correct';const wrong=document.createElement('button');wrong.className='btn pink';wrong.textContent='✕ Wrong';correct.onclick=()=>teamAnswer(team,true,question,correct);wrong.onclick=()=>teamAnswer(team,false,question,wrong);reveal.onclick=()=>{result.classList.remove('hidden');judge.classList.remove('hidden');reveal.disabled=true};judge.append(correct,wrong);stage.append(reveal,result,judge)}return stage}
+
+function fitBallPool(pool,count){
+ requestAnimationFrame(()=>{
+  if(!pool.isConnected)return;
+  const cols=5,rows=Math.max(1,Math.ceil(count/cols));
+  const gap=parseFloat(getComputedStyle(pool).gap)||8;
+  const cellW=(pool.clientWidth-gap*(cols-1))/cols;
+  const cellH=(pool.clientHeight-gap*(rows-1))/rows;
+  const size=Math.max(42,Math.min(196,cellW*.84,cellH*.84));
+  pool.style.setProperty('--dynamic-ball-size',size+'px');
+ });
+}
+function renderOnePool(){if(!oneState)return;const host=$('oneContent');host.innerHTML='';const current=oneState.current;if(current){const teamName=document.createElement('div');teamName.className='subtitle';teamName.textContent=(oneState.index===0?'🔵 TEAM A':'🔴 TEAM B')+' · ANSWER THIS QUESTION';host.append(teamName);host.append(buildQuestionStage(oneState,current));const back=document.createElement('button');back.className='btn dark';back.textContent='⌂ Return to Question Pool';back.onclick=()=>{if(confirm('Return to the question pool without answering? This question will remain available.')){stopAllSfxAndResumeMusic();oneState.current=null;oneState.answerLocked=false;renderOnePool()}};host.append(back);return}const heading=document.createElement('div');heading.className='subtitle';heading.textContent=(oneState.index===0?"Team A's turn":"Team B's turn")+' · Choose a basketball question';host.append(heading);const pool=document.createElement('div');pool.className='ball-pool';const ids=oneState.order.filter(id=>!oneState.used.includes(id));if(!ids.length){if(config.durationMode==='timed'){oneState.used=[];oneState.order=shuffle(config.questions).map(q=>q.id)}else{finishOneGame();return}}const visible=oneState.order.filter(id=>!oneState.used.includes(id));visible.forEach((id,i)=>{const b=document.createElement('button');b.className='question-ball';b.textContent=i+1;b.setAttribute('aria-label','Question '+(i+1));b.onclick=()=>{if(b.classList.contains('is-opening'))return;const q=questionById(id);if(!q)return;b.classList.add('is-opening');b.disabled=true;playAudio('soundClick');setTimeout(()=>{oneState.current=q;oneState.startedAt=performance.now();oneState.answerLocked=false;renderOnePool()},820)};pool.append(b)});host.append(pool);fitBallPool(pool,visible.length);const turn=document.createElement('div');turn.className='toolbar';const switchBtn=document.createElement('button');switchBtn.className='btn blue';switchBtn.textContent='Switch Turn: '+(oneState.index===0?'Team B':'Team A');switchBtn.onclick=()=>{oneState.index=1-oneState.index;renderOnePool()};turn.append(switchBtn);host.append(turn)}
+function startGame(){saveSettings();if(!config.questions.length){alert('Add at least one question first.');showScreen('settings');return}stopGames();if(config.gameMode==='one'){oneState=makeTeam(0,config.questions);oneState.index=0;oneState.order=config.questions.map(q=>q.id);oneState.remaining=config.durationMode==='timed'?config.timeLimit*60:0;showScreen('gameOne');renderOnePool();if(config.durationMode==='timed')oneInterval=setInterval(()=>{if(!oneState||!gameRunning)return;oneState.remaining--; $('oneTimer').textContent=formatTime(oneState.remaining);if(oneState.remaining<=0)finishOneGame()},1000);$('oneTimer').textContent=config.durationMode==='timed'?formatTime(oneState.remaining):'∞';gameRunning=true}else{const qa=questionsForTeam(0),qb=questionsForTeam(1);const a=makeTeam(0,qa),b=makeTeam(1,qb);a.order=qa.map(q=>q.id);b.order=qb.map(q=>q.id);twoStates=[a,b];showScreen('gameTwo');gameRunning=true;renderTeamPanel(0);renderTeamPanel(1);if(config.durationMode==='timed')twoInterval=setInterval(()=>{twoStates.forEach(t=>{if(!t||t.finished)return;t.remaining--;const el=$('teamTimer'+t.index);if(el)el.textContent=formatTime(t.remaining);if(t.remaining<=0)finishTeam(t.index)});if(twoStates.every(t=>t.finished))finishTwoGame()},1000)}syncMusic()}
+function renderTeamPanel(index){const team=twoStates[index];const host=index===0?$('teamPanelA'):$('teamPanelB');host.innerHTML='';if(!team)return;const head=document.createElement('div');head.className='game-head';head.innerHTML=`<div class="scoreboard ${index?'red':''}"><div><div class="team-name">${index?'🔴 TEAM B':'🔵 TEAM A'}</div><div class="score-number" id="teamScore${index}">${team.score}</div></div></div><div class="timer" id="teamTimer${index}">${config.durationMode==='timed'?formatTime(team.remaining):'∞'}</div>`;host.append(head);const content=document.createElement('div');content.className='game-content';host.append(content);if(team.finished){content.innerHTML=`<div class="team-finished"><div class="trophy"><img src="trophyfinal.webp" alt="Trophy"></div><div>${team.name} FINISHED!</div><div class="bigscore">${team.score}</div><div>Final Score</div></div>`;return}if(team.current){content.append(buildQuestionStage(team,team.current,true));const back=document.createElement('button');back.className='btn dark';back.textContent='⌂ Return to Question Pool';back.onclick=()=>{if(confirm('Return without answering? This question will remain available.')){stopAllSfxAndResumeMusic();team.current=null;team.answerLocked=false;renderTeamPanel(index)}};content.append(back);return}const ids=remainingQuestions(team);if(!ids.length){finishTeam(index);return}const title=document.createElement('div');title.className='subtitle';title.textContent='Choose your question';content.append(title);const pool=document.createElement('div');pool.className='ball-pool';ids.forEach((id,i)=>{const b=document.createElement('button');b.className='question-ball';b.textContent=team.order.indexOf(id)+1;b.onclick=()=>{if(b.classList.contains('is-opening'))return;const q=questionById(id);if(!q)return;b.classList.add('is-opening');b.disabled=true;playAudio('soundClick');setTimeout(()=>{team.current=q;team.startedAt=performance.now();team.answerLocked=false;renderTeamPanel(index)},820)};pool.append(b)});content.append(pool);fitBallPool(pool,ids.length)}
+function finishTeam(index){const team=twoStates[index];if(!team||team.finished)return;team.finished=true;team.current=null;renderTeamPanel(index);if(twoStates.every(t=>t.finished))finishTwoGame()}
+function finishOneGame(){if(!oneState)return;stopOneTimer();gameRunning=false;const overlay=document.createElement('div');overlay.className='end-overlay';overlay.innerHTML=`<div class="end-card"><div class="trophy"><img src="trophyfinal.webp" alt="Trophy"></div><h2>${oneState.score>=0?'GAME COMPLETE!':'GAME OVER!'}</h2><div class="final-scores"><div class="team-final">🔵 Team A<br><strong>${oneState.score}</strong></div><div class="team-final">🔴 Team B<br><strong>${0}</strong></div></div><p>One-Screen mode uses a shared turn-based pool. Final team scores are shown on the scoreboard.</p><button class="btn" id="endAgain">Play Again</button> <button class="btn dark" id="endCover">Cover</button></div>`;document.body.append(overlay);$('endAgain').onclick=()=>{overlay.remove();startGame()};$('endCover').onclick=()=>{overlay.remove();showScreen('cover')};playAudio('soundWinner')}
+function finishTwoGame(){
+ stopTwoTimer();
+ gameRunning=false;
+ const a=twoStates[0]?.score??0;
+ const b=twoStates[1]?.score??0;
+ const winner=a===b?'IT’S A TIE!':a>b?'TEAM A WINS!':'TEAM B WINS!';
+ document.querySelectorAll('.end-overlay').forEach(node=>node.remove());
+ const overlay=document.createElement('div');
+ overlay.className='end-overlay';
+ overlay.innerHTML=`<div class="end-card two-mode-final-card">
+   <div class="trophy"><img src="trophyfinal.webp" alt="Trophy"></div>
+   <h2>${winner}</h2>
+   <div class="final-scores">
+     <div class="team-final team-final-a"><span class="final-team-label">TEAM A:</span><strong>${a}</strong></div>
+     <div class="team-final team-final-b"><span class="final-team-label">TEAM B:</span><strong>${b}</strong></div>
+   </div>
+   <p class="final-announcement">${a===b?'Both teams finished with the same score. Great game!':(a>b?'Team A':'Team B')+' takes the win!'}</p>
+   <div class="final-actions"><button class="btn" id="endAgain">Play Again</button><button class="btn dark" id="endCover">Cover</button></div>
+ </div>`;
+ document.body.append(overlay);
+ $('endAgain').onclick=()=>{overlay.remove();startGame()};
+ $('endCover').onclick=()=>{overlay.remove();showScreen('cover')};
+ playAudio('soundWinner');
+}
+function stopOneTimer(){if(oneInterval){clearInterval(oneInterval);oneInterval=null}}function stopTwoTimer(){if(twoInterval){clearInterval(twoInterval);twoInterval=null}}function stopGames(){stopOneTimer();stopTwoTimer();gameRunning=false;oneState=null;twoStates=[null,null];document.querySelectorAll('.end-overlay,.feedback,.rare-overlay').forEach(x=>x.remove())}
+// Correctly render one-screen team scores as separate totals (team A and team B).
+// One-screen shared-pool score state is upgraded to an explicit two-team ledger.
+let oneScores=[0,0];const originalUpdateScoreboard=updateScoreboard;
+function resetOneScoreboards(){oneScores=[0,0];$('oneScoreAValue').textContent='0';$('oneScoreBValue').textContent='0'}
+const originalScoreAnimation=scoreAnimation;
+scoreAnimation=function(team,delta,anchor){if(config.gameMode==='one'){const idx=team.index;const start=anchor||{x:innerWidth/2,y:innerHeight/2};const target=idx===0?{x:innerWidth*.18,y:35}:{x:innerWidth*.82,y:35};const el=document.createElement('div');el.className='floating-score '+(delta>=0?'plus':'minus');el.textContent=(delta>0?'+':'')+delta;el.style.left=start.x+'px';el.style.top=start.y+'px';el.style.setProperty('--dx',(target.x-start.x)+'px');el.style.setProperty('--dy',(target.y-start.y)+'px');document.body.append(el);setTimeout(()=>{el.remove();team.score+=delta;$(idx===0?'oneScoreAValue':'oneScoreBValue').textContent=team.score},1050);return}originalScoreAnimation(team,delta,anchor)};
+// Override the one-screen team lifecycle with two separate turn ledgers.
+function startOneMode(){resetOneScoreboards();oneState={index:0,teams:[makeTeam(0,config.questions),makeTeam(1,config.questions)],used:[],order:config.questions.map(q=>q.id),remaining:config.durationMode==='timed'?config.timeLimit*60:0};oneState.teams.forEach(t=>{t.score=0;t.fastCount=0});showScreen('gameOne');renderOnePool();if(config.durationMode==='timed')oneInterval=setInterval(()=>{if(!oneState||!gameRunning)return;oneState.remaining=Math.max(0,oneState.remaining-1);$('oneTimer').textContent=formatTime(oneState.remaining);if(oneState.remaining<=0)finishOneGame()},1000);$('oneTimer').textContent=config.durationMode==='timed'?formatTime(oneState.remaining):'∞';gameRunning=true}
+// One shared question pool; teams alternate turns and keep separate scores/rare-card counters.
+const oldRenderOnePool=renderOnePool;
+renderOnePool=function(){if(!oneState?.teams){oldRenderOnePool();return}const team=oneState.teams[oneState.index];const host=$('oneContent');host.innerHTML='';if(team.current){const label=document.createElement('div');label.className='subtitle';label.textContent=(team.index===0?'🔵 TEAM A':'🔴 TEAM B')+' · ANSWER THIS QUESTION';host.append(label,buildQuestionStage(team,team.current));const back=document.createElement('button');back.className='btn dark';back.textContent='⌂ Return to Question Pool';back.onclick=()=>{if(confirm('Return without answering? This question will remain available.')){stopAllSfxAndResumeMusic();team.current=null;team.answerLocked=false;renderOnePool()}};host.append(back);return}const heading=document.createElement('div');heading.className='subtitle';heading.textContent=(team.index===0?"Team A's turn":"Team B's turn")+' · Choose a basketball question';host.append(heading);const pool=document.createElement('div');pool.className='ball-pool';const ids=oneState.order.filter(id=>!oneState.used.includes(id));if(!ids.length){if(config.durationMode==='timed'){oneState.used=[];oneState.order=shuffle(config.questions).map(q=>q.id)}else{finishOneGame();return}}oneState.order.filter(id=>!oneState.used.includes(id)).forEach((id,i)=>{const b=document.createElement('button');b.className='question-ball';b.textContent=oneState.order.indexOf(id)+1;b.onclick=()=>{if(b.classList.contains('is-opening'))return;const q=questionById(id);if(!q)return;b.classList.add('is-opening');b.disabled=true;playAudio('soundClick');setTimeout(()=>{team.current=q;team.startedAt=performance.now();team.answerLocked=false;renderOnePool()},820)};pool.append(b)});host.append(pool);const turnNote=document.createElement('div');turnNote.className='pool-title';turnNote.textContent='Next turn switches automatically after this question.';host.append(turnNote)};
+const oldStartGame=startGame;
+startGame=function(){saveSettings();if(!config.questions.length){alert('Add at least one question first.');showScreen('settings');return}stopGames();if(config.gameMode==='one'){startOneMode()}else{const qa=questionsForTeam(0),qb=questionsForTeam(1);const a=makeTeam(0,qa),b=makeTeam(1,qb);a.order=qa.map(q=>q.id);b.order=qb.map(q=>q.id);twoStates=[a,b];showScreen('gameTwo');gameRunning=true;renderTeamPanel(0);renderTeamPanel(1);if(config.durationMode==='timed')twoInterval=setInterval(()=>{twoStates.forEach(t=>{if(!t||t.finished)return;t.remaining--;const el=$('teamTimer'+t.index);if(el)el.textContent=formatTime(t.remaining);if(t.remaining<=0)finishTeam(t.index)});if(twoStates.every(t=>t.finished))finishTwoGame()},1000)}syncMusic()};
+const oldAdvance=advanceAfterAnswer;advanceAfterAnswer=function(team){if(config.gameMode==='one'&&oneState?.teams){oneState.index=1-oneState.index;renderOnePool()}else oldAdvance(team)};
+const oldFinishOne=finishOneGame;finishOneGame=function(){if(oneState?.teams){stopOneTimer();gameRunning=false;const a=oneState.teams[0].score,b=oneState.teams[1].score;const winner=a===b?'IT’S A TIE!':a>b?'TEAM A WINS!':'TEAM B WINS!';const overlay=document.createElement('div');overlay.className='end-overlay';overlay.innerHTML=`<div class="end-card"><div class="trophy"><img src="trophyfinal.webp" alt="Trophy"></div><h2>${winner}</h2><div class="final-scores"><div class="team-final">🔵 Team A<br><strong>${a}</strong></div><div class="team-final">🔴 Team B<br><strong>${b}</strong></div></div><button class="btn" id="endAgain">Play Again</button> <button class="btn dark" id="endCover">Cover</button></div>`;document.body.append(overlay);$('endAgain').onclick=()=>{overlay.remove();startGame()};$('endCover').onclick=()=>{overlay.remove();showScreen('cover')};playAudio('soundWinner');return}oldFinishOne()};
+// Timer in one-screen mode belongs to the active team, while the shared game duration is global.
+// Use a global clock and do not change the independent team score ledger.
+// Initial state restoration.
+try{const saved=JSON.parse(localStorage.getItem('tk-hoop-it-up-config')||'null');if(saved&&Array.isArray(saved.questions)){config={...DEFAULTS,...saved,questions:saved.questions}}}catch(e){}
+syncSettingsForm();
+// Community lesson bridge: trusted parent window sends a validated Hoop It Up JSON lesson.
+const COMMUNITY={ready:'TK_HOOPITUP_READY',load:'TK_HOOPITUP_LESSON',loaded:'TK_HOOPITUP_LOADED',error:'TK_HOOPITUP_ERROR'};
+const communityHost=window.opener||(window.parent!==window?window.parent:null);
+function postParent(type,extra={}){if(communityHost){let target='*';try{target=communityHost.location.origin}catch(e){}communityHost.postMessage({type,...extra},target)}}
+window.addEventListener('message',event=>{if(!communityHost||event.source!==communityHost||!(/(^|\.)teacherkhen\.com$/i).test(new URL(event.origin).hostname))return;const d=event.data;if(!d||d.type!==COMMUNITY.load)return;try{const lesson=d.lesson;if(!lesson||lesson.game!=='hoop-it-up'||!Array.isArray(lesson.questions)||!lesson.questions.length)throw new Error('Invalid Hoop It Up lesson JSON.');config.questions=lesson.questions; if(lesson.settings){config.gameMode=lesson.settings.gameMode==='two'?'two':'one';config.durationMode=lesson.settings.durationMode==='timed'?'timed':'complete';config.timeLimit=[5,10,15,20].includes(Number(lesson.settings.timeLimit))?Number(lesson.settings.timeLimit):5;config.randomizeTeams=lesson.settings.randomizeTeams!==false}saveLocal();syncSettingsForm();postParent(COMMUNITY.loaded,{game:'hoop-it-up'});showScreen('cover')}catch(err){postParent(COMMUNITY.error,{message:err.message})}});
+if(communityHost)postParent(COMMUNITY.ready,{game:'hoop-it-up',version:1});
+// Avoid leaving audio running after closing the page.
+window.addEventListener('pagehide',()=>{$('bgMusic').pause();stopGames()});
+loadLocal();
+
+})();
+
+/* V5.1 refinement: sporty cover title, strict five-column basketball grid, louder SFX defaults. */
+(function(){
+ const style=document.createElement('style');
+ style.textContent=`
+  /* Keep the title distinctive; classroom question content remains Comic Neue. */
+  .cover .title{font-family:'Titan One', 'Bungee', sans-serif!important;letter-spacing:0!important;font-weight:400!important;font-style:normal!important;text-transform:uppercase!important;font-size:clamp(48px,9vw,104px)!important;line-height:1.02!important;color:#ffe56b!important;-webkit-text-stroke:1.5px #8b3b12!important;text-shadow:0 5px 0 #bd5b24,0 9px 0 #7d3218,0 14px 25px #0009!important}
+  .question-stage h2,.answer-btn,.ident-input,.question-stage .question-topline{font-family:'Comic Neue',cursive!important}
+  .ball-pool{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-auto-flow:row!important;grid-auto-rows:minmax(0,1fr)!important;justify-items:center!important;align-items:center!important;align-content:center!important;width:100%!important;max-width:1500px!important;height:100%!important;min-height:0!important;max-height:none!important;overflow:hidden!important;}
+  .question-ball{width:min(100%,var(--dynamic-ball-size,210px))!important;max-width:none!important;min-width:0!important;aspect-ratio:1/1!important;justify-self:center!important;align-self:center!important;font-family:'Titan One','Bungee',sans-serif!important;font-size:clamp(24px,3.4vw,48px)!important}
+  #gameOne .game-content{min-height:0!important;overflow:hidden!important}
+  .team-panel .ball-pool{height:100%!important;max-height:none!important}
+  @media(max-width:700px){.ball-pool{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:4px!important}.question-ball{width:min(100%,var(--dynamic-ball-size,17vw))!important}}
+ `;
+ document.head.appendChild(style);
+ // Recalculate ball size after the final renderer has inserted the pool.
+ const previousOneRenderer=renderOnePool;
+ renderOnePool=function(){previousOneRenderer();const pool=document.querySelector('#oneContent .ball-pool');if(pool)fitBallPool(pool,pool.children.length)};
+ const previousTeamRenderer=renderTeamPanel;
+ renderTeamPanel=function(index){previousTeamRenderer(index);const pool=document.querySelector((index===0?'#teamPanelA':'#teamPanelB')+' .ball-pool');if(pool)fitBallPool(pool,pool.children.length)};
+
+ /* Final scoreboard and team-mode score readability refinements. */
+ const finalStyle=document.createElement('style');
+ finalStyle.id='v12-final-score-and-team-score-polish';
+ finalStyle.textContent=`
+ .end-overlay{
+   background-color:#10264a!important;
+   background-image:url('background.gif')!important;
+   background-position:center center!important;
+   background-size:cover!important;
+   background-repeat:no-repeat!important;
+   background-attachment:fixed!important;
+   backdrop-filter:none!important;
+   padding:clamp(10px,2vw,26px)!important;
+ }
+ .two-mode-final-card{
+   width:min(1000px,96vw)!important;
+   max-height:94dvh!important;
+   overflow:auto!important;
+   padding:clamp(18px,3.2vw,42px)!important;
+   border-width:7px!important;
+   background:linear-gradient(135deg,#fff8d9 0%,#e3f8e9 48%,#bceeff 100%)!important;
+ }
+ .two-mode-final-card .trophy{font-size:clamp(62px,9vw,112px)!important;line-height:1.05!important}
+ .two-mode-final-card h2{
+   font-family:'Press Start 2P',monospace!important;
+   font-size:clamp(21px,3.5vw,42px)!important;
+   line-height:1.55!important;
+   color:#15558a!important;
+   text-shadow:3px 3px 0 #ffd45c,0 5px 12px #0002!important;
+   margin:clamp(10px,2vh,22px) 0!important;
+   overflow-wrap:anywhere!important;
+ }
+ .two-mode-final-card .final-scores{
+   display:grid!important;
+   grid-template-columns:repeat(2,minmax(0,1fr))!important;
+   align-items:stretch!important;
+   gap:clamp(16px,2.5vw,30px)!important;
+   width:min(760px,100%)!important;
+   margin:clamp(15px,2.5vh,28px) auto!important;
+ }
+ .two-mode-final-card .team-final{
+   box-sizing:border-box!important;
+   width:100%!important;
+   min-height:clamp(150px,20vh,210px)!important;
+   display:flex!important;
+   flex-direction:column!important;
+   align-items:center!important;
+   justify-content:center!important;
+   gap:clamp(12px,2vh,20px)!important;
+   text-align:center!important;
+ }
+ .two-mode-final-card .final-team-label{
+   display:block!important;
+   width:100%!important;
+   font-family:'Press Start 2P',monospace!important;
+   font-size:clamp(13px,1.8vw,20px)!important;
+   line-height:1.7!important;
+   white-space:nowrap!important;
+   color:#173b62!important;
+ }
+ .two-mode-final-card .team-final strong{
+   display:block!important;
+   width:100%!important;
+   font-family:'Press Start 2P',monospace!important;
+   font-size:clamp(38px,6vw,68px)!important;
+   line-height:1.45!important;
+   text-align:center!important;
+   color:#145b9a!important;
+   text-shadow:3px 3px 0 #ffe27b!important;
+   overflow-wrap:anywhere!important;
+ }
+ .two-mode-final-card .team-final{
+   min-width:0!important;
+   min-height:clamp(135px,19vh,205px)!important;
+   display:flex!important;
+   flex-direction:column!important;
+   align-items:center!important;
+   justify-content:center!important;
+   gap:clamp(8px,1.2vh,14px)!important;
+   padding:clamp(12px,2vw,24px)!important;
+   border:4px solid #d5eaff!important;
+   border-radius:22px!important;
+   background:linear-gradient(180deg,#fff,#f2f9ff)!important;
+   box-shadow:0 8px 0 #91b3d1,0 13px 24px #12365a25!important;
+   color:#173b62!important;
+ }
+ .two-mode-final-card .final-team-label{
+   font-family:'Press Start 2P',monospace!important;
+   font-size:clamp(11px,1.5vw,17px)!important;
+   line-height:1.6!important;
+ }
+ .two-mode-final-card .team-final strong{
+   font-family:'Press Start 2P',monospace!important;
+   font-size:clamp(30px,5.3vw,58px)!important;
+   line-height:1.5!important;
+   color:#145b9a!important;
+   text-shadow:3px 3px 0 #ffe27b!important;
+   overflow-wrap:anywhere!important;
+ }
+ .two-mode-final-card .final-announcement{
+   font:800 clamp(18px,2.2vw,27px) Fredoka,sans-serif!important;
+   color:#183d63!important;
+   margin:10px 0 20px!important;
+ }
+ .two-mode-final-card .final-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+ .team-panel .scoreboard{gap:12px!important;padding:7px 12px!important;min-height:66px!important}
+ .team-panel .team-name{
+   font-family:'Press Start 2P',monospace!important;
+   font-size:clamp(10px,1.15vw,15px)!important;
+   line-height:1.7!important;
+ }
+ .team-panel .score-number{
+   font-family:'Press Start 2P',monospace!important;
+   font-size:clamp(20px,2.6vw,36px)!important;
+   line-height:1.65!important;
+   letter-spacing:-1px!important;
+   text-shadow:2px 2px 0 #56370b,0 0 9px #ffe36b88!important;
+ }
+ @media(max-width:560px){
+   .two-mode-final-card .final-scores{gap:8px!important}
+   .two-mode-final-card .team-final{min-height:125px!important;padding:10px!important}
+   .two-mode-final-card .final-team-label{font-size:clamp(9px,2.5vw,13px)!important}
+   .two-mode-final-card .team-final strong{font-size:clamp(25px,7vw,40px)!important}
+   .team-panel .team-name{font-size:clamp(8px,2vw,11px)!important}
+   .team-panel .score-number{font-size:clamp(17px,3.5vw,25px)!important}
+ }
+ @media(max-width:360px){.two-mode-final-card .final-scores{grid-template-columns:1fr!important}}
+ `;
+ document.head.appendChild(finalStyle);
+ // Apply maximum SFX loudness by default while retaining the user's slider control.
+ ['sfxVolume','sfxVolumeGame','sfxVolumeTwo'].forEach(id=>{const el=document.getElementById(id);if(el&&(!el.dataset.userAdjusted)){el.value='100'}});
+})();
+</script>
+<script id="premium-auth-logic">
+(()=>{
+ const SUPABASE_URL='https://onigbrcsfcbuporhylxv.supabase.co';
+ const SUPABASE_PUBLISHABLE_KEY='sb_publishable_MMXsHQKzKYn0mAA3MQOlWA_pEdCS-r3';
+ const db=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+ const authScreen=document.getElementById('authScreen'),gameArea=document.documentElement,message=document.getElementById('message'),loginForm=document.getElementById('loginForm'),loginButton=document.getElementById('loginButton');
+ let currentUserId=null,checkNumber=0,membershipVerified=false,authInitialized=false;
+ function showMessage(text){message.textContent=text}
+ function showLogin(text){membershipVerified=false;gameArea.classList.remove('premium-authorized');authScreen.style.display='flex';document.getElementById('premium-memberBar').classList.add('hidden');showMessage(text)}
+ function showGame(user,membership){membershipVerified=true;currentUserId=user.id;authScreen.style.display='none';gameArea.classList.add('premium-authorized');document.getElementById('premium-memberBar').classList.remove('hidden');console.log('Membership verified:',membership.plan,membership.expires_at)}
+ async function verifyMembership(user){const thisCheck=++checkNumber;membershipVerified=false;gameArea.classList.remove('premium-authorized');authScreen.style.display='flex';if(!user){currentUserId=null;showLogin('Please log in to access this Premium game.');return}currentUserId=user.id;showMessage('Checking your Premium membership...');try{const {data,error}=await db.from('learning_hub_memberships').select('user_id, plan, status, expires_at').eq('user_id',user.id).maybeSingle();if(thisCheck!==checkNumber)return;if(error){console.error('Membership verification failed:',error);showLogin("We couldn't verify your membership. Please try again or contact support.");return}if(!data){showLogin('No membership was found for this account. Please subscribe or contact support.');return}const allowedPlans=['monthly','yearly','premium'],plan=String(data.plan||'').toLowerCase(),status=String(data.status||'').toLowerCase(),expiration=data.expires_at?Date.parse(data.expires_at):NaN;const valid= data.user_id===user.id&&allowedPlans.includes(plan)&&status==='active'&&Number.isFinite(expiration)&&expiration>Date.now();if(!valid){showLogin('Your Premium membership is inactive or expired. Please renew your subscription.');return}showGame(user,data)}catch(error){console.error(error);if(thisCheck===checkNumber)showLogin('Unable to verify membership. Check your connection and try again.')}}
+ loginForm.addEventListener('submit',async e=>{e.preventDefault();loginButton.disabled=true;showMessage('Logging in...');try{const {data,error}=await db.auth.signInWithPassword({email:document.getElementById('email').value.trim(),password:document.getElementById('password').value});if(error){showMessage('Login failed: '+error.message);return}await verifyMembership(data.user)}catch(e){console.error(e);showMessage('Login failed. Please try again.')}finally{loginButton.disabled=false}});
+ document.getElementById('signupButton').addEventListener('click',async()=>{const email=document.getElementById('email').value.trim(),password=document.getElementById('password').value;if(!email||!password){showMessage('Enter your email and password first.');return}if(password.length<6){showMessage('Your password must be at least 6 characters.');return}showMessage('Creating your account...');try{const {data,error}=await db.auth.signUp({email,password});if(error){showMessage('Registration failed: '+error.message);return}if(data.session&&data.user)await verifyMembership(data.user);else showMessage('Account created. Check your email if confirmation is required, then log in. An account alone does not grant Premium access.')}catch(e){console.error(e);showMessage('Registration failed. Please try again.')}});
+ document.getElementById('resetButton').addEventListener('click',async()=>{const email=document.getElementById('email').value.trim();if(!email){showMessage('Enter your email address first.');return}showMessage('Requesting password recovery...');try{const {error}=await db.auth.resetPasswordForEmail(email);showMessage(error?'Password reset failed: '+error.message:'If the account can receive recovery emails, recovery instructions will be sent.')}catch(e){console.error(e);showMessage('Unable to request password recovery.')}});
+ document.getElementById('logoutButton').addEventListener('click',async()=>{showLogin('Logging out...');checkNumber++;currentUserId=null;membershipVerified=false;const {error}=await db.auth.signOut();if(error){console.error(error);showMessage('Logout could not be confirmed. Please refresh.')}else showLogin('You have logged out.')});
+ db.auth.onAuthStateChange((event,session)=>{if(event==='TOKEN_REFRESHED')return;const user=session?.user||null;if(!user){checkNumber++;currentUserId=null;membershipVerified=false;if(authInitialized)showLogin('Please log in to access this Premium game.');return}if(membershipVerified&&currentUserId===user.id&&gameArea.classList.contains('premium-authorized'))return;setTimeout(()=>verifyMembership(user),0)});
+ (async()=>{showMessage('Checking your login...');try{const {data,error}=await db.auth.getSession();if(error){showLogin('Unable to check your session. Please refresh.');return}authInitialized=true;if(data.session?.user)await verifyMembership(data.session.user);else showLogin('Please log in to access this Premium game.')}catch(e){console.error(e);authInitialized=true;showLogin('Unable to connect. Please refresh and try again.')}})();
+})();
+</script>
+
+<style id="v10-readable-text-upgrade">
+/* V10: larger, clearer question, answer-option, and tutorial typography. */
+.question-stage h2 {
+  font-size: clamp(29px, 3.5vw, 48px) !important;
+  line-height: 1.18 !important;
+  font-weight: 900 !important;
+}
+.answer-btn {
+  font-size: clamp(23px, 2.7vw, 34px) !important;
+  line-height: 1.18 !important;
+  font-weight: 900 !important;
+  padding: clamp(9px, 1vw, 15px) !important;
+}
+.answer-btn strong {
+  font-size: 1em !important;
+}
+.ident-input {
+  font-size: clamp(24px, 2.8vw, 34px) !important;
+}
+.ident-revealed {
+  font-size: clamp(23px, 2.6vw, 34px) !important;
+  font-weight: 900 !important;
+}
+.tutorial-card .step-tag {
+  font-size: clamp(14px, 1.55vw, 20px) !important;
+  line-height: 1.5 !important;
+  padding: 13px 18px !important;
+}
+.tutorial-card h2 {
+  font-size: clamp(34px, 5.2vw, 72px) !important;
+  line-height: 1.2 !important;
+  margin: 10px 0 14px !important;
+}
+.tutorial-card p {
+  font-size: clamp(25px, 3.1vw, 40px) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+}
+.tutorial-card .tutorial-visual {
+  font-size: clamp(20px, 2.4vw, 30px) !important;
+}
+
+/* Two-screen panels have less room, so scale text to each half-screen
+   while keeping it substantially larger than the previous compact styling. */
+.team-panel .question-stage h2 {
+  font-size: clamp(18px, 2.15vw, 29px) !important;
+  line-height: 1.16 !important;
+}
+.team-panel .answer-btn {
+  font-size: clamp(16px, 1.65vw, 23px) !important;
+  line-height: 1.14 !important;
+  padding: clamp(5px, .65vw, 10px) !important;
+}
+.team-panel .answer-btn strong {
+  font-size: 1em !important;
+}
+.team-panel .ident-input,
+.team-panel .ident-revealed {
+  font-size: clamp(17px, 1.8vw, 25px) !important;
+}
+@media (max-width: 700px) {
+  .question-stage h2 {
+    font-size: clamp(24px, 5vw, 34px) !important;
+  }
+  .answer-btn {
+    font-size: clamp(19px, 4vw, 26px) !important;
+  }
+  .tutorial-card h2 {
+    font-size: clamp(28px, 7vw, 42px) !important;
+  }
+  .tutorial-card p {
+    font-size: clamp(21px, 4.5vw, 29px) !important;
+  }
+  .team-panel .question-stage h2 {
+    font-size: clamp(16px, 2.8vw, 22px) !important;
+  }
+  .team-panel .answer-btn {
+    font-size: clamp(14px, 2.5vw, 19px) !important;
+  }
+}
+@media (max-height: 650px) {
+  .tutorial-card h2 {
+    font-size: clamp(27px, 4vw, 48px) !important;
+  }
+  .tutorial-card p {
+    font-size: clamp(20px, 2.5vw, 30px) !important;
+  }
+}
+</style>
+
+
+<style id="v11-two-screen-question-layout-fix">
+/* Fix two-screen question panels: allocate the full panel height to the
+   question and its answer grid instead of letting the answer rows collapse. */
+.team-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 0 !important;
+  height: 100% !important;
+}
+.team-panel > .game-content {
+  display: flex !important;
+  flex: 1 1 0 !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+  min-height: 0 !important;
+  height: 0 !important;
+  padding: clamp(8px, 1vw, 14px) !important;
+  gap: clamp(7px, .8vh, 12px) !important;
+  overflow: hidden !important;
+}
+.team-panel > .game-content > .question-stage {
+  display: flex !important;
+  flex: 1 1 0 !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 auto !important;
+  padding: clamp(9px, 1vw, 16px) !important;
+  gap: clamp(6px, .9vh, 12px) !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+.team-panel .question-topline {
+  flex: 0 0 auto !important;
+  width: 100% !important;
+  min-height: 42px !important;
+  margin: 0 !important;
+}
+.team-panel .question-stage h2 {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  font-size: clamp(19px, 2vw, 30px) !important;
+  line-height: 1.18 !important;
+  overflow-wrap: anywhere !important;
+}
+.team-panel .question-clock {
+  flex: 0 0 auto !important;
+}
+.team-panel .question-image {
+  flex: 0 1 auto !important;
+  max-height: clamp(55px, 12vh, 125px) !important;
+  max-width: 90% !important;
+  object-fit: contain !important;
+}
+.team-panel .answer-grid {
+  display: grid !important;
+  flex: 1 1 0 !important;
+  min-height: 0 !important;
+  width: 100% !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-rows: minmax(0, 1fr) !important;
+  align-content: stretch !important;
+  gap: clamp(6px, .7vw, 10px) !important;
+  margin: 0 !important;
+}
+.team-panel .answer-btn {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  box-sizing: border-box !important;
+  padding: clamp(6px, .7vw, 11px) !important;
+  gap: clamp(4px, .5vw, 8px) !important;
+  font-size: clamp(16px, 1.45vw, 23px) !important;
+  line-height: 1.15 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  overflow: hidden !important;
+}
+.team-panel .answer-btn img {
+  max-width: min(34%, 110px) !important;
+  max-height: clamp(32px, 7vh, 76px) !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+.team-panel > .game-content > .btn {
+  flex: 0 0 auto !important;
+  min-height: 42px !important;
+  margin: 0 !important;
+}
+.team-panel .ident-revealed,
+.team-panel .ident-judge,
+.team-panel > .game-content > .btn.blue {
+  flex: 0 0 auto !important;
+}
+@media (max-height: 650px) {
+  .team-panel > .game-content {
+    padding: 5px !important;
+    gap: 4px !important;
+  }
+  .team-panel > .game-content > .question-stage {
+    padding: 6px !important;
+    gap: 4px !important;
+  }
+  .team-panel .question-topline {
+    min-height: 32px !important;
+  }
+  .team-panel .question-stage h2 {
+    font-size: clamp(17px, 1.7vw, 23px) !important;
+  }
+  .team-panel .question-image {
+    max-height: 8vh !important;
+  }
+  .team-panel .answer-btn {
+    font-size: clamp(14px, 1.25vw, 19px) !important;
+    padding: 4px !important;
+  }
+  .team-panel .answer-btn img {
+    max-height: 5vh !important;
+  }
+}
+</style>
+
+</body></html>
