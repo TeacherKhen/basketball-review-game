@@ -479,6 +479,146 @@ body:has(.game-screen.active){overflow:hidden}
 }
 </style>
 
+
+<style id="hoop-two-team-question-fit-fix">
+/* Two-team question layout: keep the image and all four answers inside each team's screen. */
+.team-panel .game-content{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  justify-content:center!important;
+  min-width:0!important;
+  min-height:0!important;
+  padding:clamp(4px,.65vw,9px)!important;
+  gap:clamp(4px,.6vh,8px)!important;
+}
+.team-panel .team-question-stage{
+  width:100%!important;
+  height:100%!important;
+  max-height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  flex:1 1 auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-start!important;
+  align-items:stretch!important;
+  gap:clamp(3px,.55vh,7px)!important;
+  padding:clamp(5px,.8vw,11px)!important;
+  overflow:hidden!important;
+}
+.team-panel .team-question-stage .question-topline{
+  flex:0 0 auto!important;
+  min-width:0!important;
+  margin:0!important;
+  gap:5px!important;
+}
+.team-panel .team-question-stage h2{
+  min-width:0!important;
+  line-height:1.12!important;
+  overflow-wrap:anywhere!important;
+  font-size:clamp(14px,1.65vw,22px)!important;
+}
+.team-panel .team-question-stage .question-clock{
+  width:clamp(48px,5.5vw,68px)!important;
+  height:clamp(48px,5.5vw,68px)!important;
+  min-width:clamp(48px,5.5vw,68px)!important;
+  margin:0!important;
+  flex:0 0 auto!important;
+}
+.team-panel .team-question-stage .question-clock .elapsed-value{font-size:clamp(11px,1.25vw,16px)!important}
+.team-panel .team-question-stage .question-image{
+  flex:0 1 auto!important;
+  width:auto!important;
+  max-width:100%!important;
+  max-height:clamp(65px,15vh,155px)!important;
+  min-height:0!important;
+  object-fit:contain!important;
+  margin:2px auto!important;
+}
+.team-panel .team-question-stage.team-long-answers .question-image{
+  max-height:clamp(42px,8vh,88px)!important;
+}
+.team-panel .team-question-stage .answer-grid{
+  flex:1 1 0!important;
+  min-height:0!important;
+  min-width:0!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  grid-template-rows:repeat(2,minmax(0,1fr))!important;
+  gap:clamp(4px,.65vw,8px)!important;
+  margin:2px 0 0!important;
+}
+.team-panel .team-question-stage .answer-btn{
+  min-width:0!important;
+  min-height:0!important;
+  height:100%!important;
+  max-height:100%!important;
+  padding:clamp(4px,.65vw,9px)!important;
+  gap:4px!important;
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+  font-size:clamp(12px,1.45vw,18px)!important;
+  line-height:1.08!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  text-align:center!important;
+}
+.team-panel .team-question-stage.team-long-answers .answer-btn{
+  font-size:clamp(10px,1.15vw,14px)!important;
+  line-height:1.04!important;
+  padding:3px!important;
+}
+.team-panel .team-question-stage .answer-btn strong{
+  flex:0 0 auto!important;
+  align-self:flex-start!important;
+  line-height:1.1!important;
+}
+.team-panel .team-question-stage .answer-btn span{
+  display:block!important;
+  flex:1 1 auto!important;
+  min-width:0!important;
+  max-width:100%!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  text-align:center!important;
+}
+.team-panel .team-question-stage .answer-btn img{
+  flex:0 1 auto!important;
+  max-width:clamp(35px,6vw,75px)!important;
+  max-height:clamp(30px,6vh,65px)!important;
+  object-fit:contain!important;
+}
+.team-panel .team-question-stage .ident-revealed,
+.team-panel .team-question-stage .ident-judge,
+.team-panel .team-question-stage>.btn{
+  flex:0 0 auto!important;
+  margin:3px auto!important;
+}
+.team-panel .game-content>.btn.dark{
+  flex:0 0 auto!important;
+  align-self:center!important;
+  max-width:100%!important;
+  padding:6px 10px!important;
+  font-size:clamp(11px,1.2vw,15px)!important;
+}
+@media(max-width:720px){
+  .team-panel .team-question-stage .answer-btn{font-size:clamp(10px,2.1vw,14px)!important}
+  .team-panel .team-question-stage.team-long-answers .answer-btn{font-size:clamp(9px,1.8vw,12px)!important}
+  .team-panel .team-question-stage .question-image{max-height:12vh!important}
+  .team-panel .team-question-stage.team-long-answers .question-image{max-height:6vh!important}
+}
+@media(max-height:600px){
+  .team-panel .team-question-stage .question-image{max-height:10vh!important}
+  .team-panel .team-question-stage.team-long-answers .question-image{max-height:5vh!important}
+  .team-panel .team-question-stage .answer-btn{font-size:clamp(10px,1.25vw,15px)!important}
+}
+</style>
+
 </head>
 <body>
 <section id="authScreen" class="auth">
@@ -675,7 +815,7 @@ function showRareCards(team){
 
 function advanceAfterAnswer(team){if(config.gameMode==='one'){if(oneState?.teams){oneState.index=1-oneState.index;renderOnePool()}else renderOnePool()}else{renderTeamPanel(team.index)}}
 function teamAnswer(team,correct,question,answerButton){if(!team||team.finished||team.answerLocked)return;team.answerLocked=true;if(answerButton)answerButton.disabled=true;if(correct){const seconds=(performance.now()-team.startedAt)/1000;const bonus=seconds<=3?5:seconds>=6&&seconds<=8?3:seconds>=9?1:0;scoreFeedback(team,question.points,bonus,question)}else{if(config.gameMode==='one'){if(!oneState.used.includes(question.id))oneState.used.push(question.id)}else{if(!team.used.includes(question.id))team.used.push(question.id)}team.current=null;showWrong(team,()=>advanceAfterAnswer(team))}}
-function buildQuestionStage(team,question,compact=false){const stage=document.createElement('div');stage.className='question-stage';const topline=document.createElement('div');topline.className='question-topline';const title=document.createElement('h2');title.textContent=question.text;const clock=document.createElement('div');clock.className='question-clock';clock.innerHTML='<small>TIME</small><span class="elapsed-value">0.0s</span>';topline.append(title,clock);stage.append(topline);if(question.image){const img=document.createElement('img');img.className='question-image';img.src=question.image;img.alt='Question image';stage.append(img)}if(question.type==='mc'){const answers=document.createElement('div');answers.className='answer-grid';question.options.forEach((o,i)=>{const b=document.createElement('button');b.className='answer-btn';const letter=document.createElement('strong');letter.textContent=String.fromCharCode(65+i)+'. ';b.append(letter);if(o.image){const img=document.createElement('img');img.src=o.image;img.alt='';b.append(img)}if(o.text){const span=document.createElement('span');span.textContent=o.text;b.append(span)}b.onclick=()=>teamAnswer(team,i===question.correctIndex,question,b);answers.append(b)});stage.append(answers)}else{const reveal=document.createElement('button');reveal.className='btn blue';reveal.textContent='👁 Reveal Answer';const result=document.createElement('div');result.className='ident-revealed hidden';result.setAttribute('aria-live','polite');result.textContent='Answer: '+question.answer;const judge=document.createElement('div');judge.className='ident-judge hidden';const correct=document.createElement('button');correct.className='btn green';correct.textContent='✓ Correct';const wrong=document.createElement('button');wrong.className='btn pink';wrong.textContent='✕ Wrong';correct.onclick=()=>teamAnswer(team,true,question,correct);wrong.onclick=()=>teamAnswer(team,false,question,wrong);reveal.onclick=()=>{result.classList.remove('hidden');judge.classList.remove('hidden');reveal.disabled=true};judge.append(correct,wrong);stage.append(reveal,result,judge)}return stage}
+function buildQuestionStage(team,question,compact=false){const stage=document.createElement('div');stage.className='question-stage'+(compact?' team-question-stage':'');if(compact&&question.type==='mc'&&(question.options||[]).some(o=>(o.text||'').trim().length>34||(o.text||'').trim().split(/\s+/).length>6))stage.classList.add('team-long-answers');const topline=document.createElement('div');topline.className='question-topline';const title=document.createElement('h2');title.textContent=question.text;const clock=document.createElement('div');clock.className='question-clock';clock.innerHTML='<small>TIME</small><span class="elapsed-value">0.0s</span>';topline.append(title,clock);stage.append(topline);if(question.image){const img=document.createElement('img');img.className='question-image';img.src=question.image;img.alt='Question image';stage.append(img)}if(question.type==='mc'){const answers=document.createElement('div');answers.className='answer-grid';question.options.forEach((o,i)=>{const b=document.createElement('button');b.className='answer-btn';const letter=document.createElement('strong');letter.textContent=String.fromCharCode(65+i)+'. ';b.append(letter);if(o.image){const img=document.createElement('img');img.src=o.image;img.alt='';b.append(img)}if(o.text){const span=document.createElement('span');span.textContent=o.text;b.append(span)}b.onclick=()=>teamAnswer(team,i===question.correctIndex,question,b);answers.append(b)});stage.append(answers)}else{const reveal=document.createElement('button');reveal.className='btn blue';reveal.textContent='👁 Reveal Answer';const result=document.createElement('div');result.className='ident-revealed hidden';result.setAttribute('aria-live','polite');result.textContent='Answer: '+question.answer;const judge=document.createElement('div');judge.className='ident-judge hidden';const correct=document.createElement('button');correct.className='btn green';correct.textContent='✓ Correct';const wrong=document.createElement('button');wrong.className='btn pink';wrong.textContent='✕ Wrong';correct.onclick=()=>teamAnswer(team,true,question,correct);wrong.onclick=()=>teamAnswer(team,false,question,wrong);reveal.onclick=()=>{result.classList.remove('hidden');judge.classList.remove('hidden');reveal.disabled=true};judge.append(correct,wrong);stage.append(reveal,result,judge)}return stage}
 
 function fitBallPool(pool,count){
  requestAnimationFrame(()=>{
@@ -1591,165 +1731,6 @@ loadLocal();
   .team-panel .question-stage:not(:has(.answer-grid)):not(:has(.question-image)) {
     gap: 8px !important;
   }
-}
-</style>
-
-
-<style id="v18-tutorial-readable-pixel-type">
-/* V18: enlarge ONLY the How to Play tutorial typography and examples.
-   The original pixel-arcade design, colors, layout, and game logic are retained. */
-#tutorial .tutorial-card {
-  gap: clamp(10px, 1.6vh, 20px) !important;
-}
-#tutorial .step-tag {
-  font-family: 'Press Start 2P', monospace !important;
-  font-size: clamp(13px, 1.45vw, 21px) !important;
-  line-height: 1.8 !important;
-  letter-spacing: .02em !important;
-  padding: clamp(12px, 1.4vh, 18px) clamp(14px, 2vw, 26px) !important;
-}
-#tutorial #tutorialTitle {
-  font-family: 'Press Start 2P', monospace !important;
-  font-size: clamp(22px, 3.3vw, 46px) !important;
-  line-height: 1.65 !important;
-  letter-spacing: 0 !important;
-  margin: clamp(8px, 1.2vh, 16px) auto !important;
-  max-width: 100% !important;
-  overflow-wrap: anywhere !important;
-}
-#tutorial #tutorialText {
-  font-family: 'Comic Neue', cursive !important;
-  font-size: clamp(27px, 3.2vw, 43px) !important;
-  line-height: 1.32 !important;
-  font-weight: 900 !important;
-  max-width: 1250px !important;
-  margin: clamp(8px, 1.2vh, 16px) auto !important;
-}
-#tutorial .tutorial-visual {
-  min-height: 0 !important;
-  max-height: 49vh !important;
-  margin: clamp(10px, 1.8vh, 22px) auto !important;
-}
-#tutorial .demo-ball {
-  font-size: clamp(34px, 4.2vw, 54px) !important;
-}
-#tutorial .mode-demo,
-#tutorial .score-demo {
-  font-size: clamp(21px, 2.15vw, 30px) !important;
-  line-height: 1.35 !important;
-  gap: clamp(10px, 1.5vh, 18px) !important;
-  padding: clamp(14px, 2vw, 28px) !important;
-}
-#tutorial .mode-demo > strong,
-#tutorial .score-demo > strong {
-  font-size: clamp(23px, 2.3vw, 33px) !important;
-  line-height: 1.5 !important;
-}
-#tutorial .mini-score b,
-#tutorial .mini-split > div,
-#tutorial .mini-answers b,
-#tutorial .mini-turn,
-#tutorial .mini-reveal {
-  font-size: clamp(20px, 2vw, 28px) !important;
-  line-height: 1.35 !important;
-  padding: clamp(10px, 1.2vw, 17px) !important;
-}
-#tutorial .mini-reveal .btn {
-  font-size: clamp(17px, 1.6vw, 23px) !important;
-}
-#tutorial .score-demo b {
-  font-size: clamp(31px, 3.2vw, 45px) !important;
-  line-height: 1.4 !important;
-}
-#tutorial .score-demo b small {
-  font-size: clamp(17px, 1.5vw, 21px) !important;
-}
-#tutorial .tutorial-rare .demo-card {
-  font-size: clamp(27px, 3vw, 40px) !important;
-}
-#tutorial .finish-demo {
-  min-height: clamp(170px, 25vh, 280px) !important;
-}
-#tutorial .finish-demo strong {
-  font-size: clamp(18px, 2vw, 27px) !important;
-  line-height: 1.8 !important;
-  overflow-wrap: anywhere !important;
-}
-#tutorial .finish-icon {
-  font-size: clamp(66px, 8vw, 105px) !important;
-}
-#tutorial .finish-symbol {
-  font-size: clamp(48px, 6vw, 78px) !important;
-}
-#tutorial .tutorial-card > .row .btn {
-  font-size: clamp(18px, 1.7vw, 24px) !important;
-  padding: clamp(11px, 1.2vh, 16px) clamp(17px, 2vw, 28px) !important;
-}
-@media (max-width: 800px) {
-  #tutorial #tutorialTitle {
-    font-size: clamp(19px, 3.8vw, 31px) !important;
-  }
-  #tutorial #tutorialText {
-    font-size: clamp(23px, 3.5vw, 31px) !important;
-  }
-  #tutorial .mode-demo,
-  #tutorial .score-demo {
-    font-size: clamp(18px, 2.5vw, 24px) !important;
-  }
-  #tutorial .mode-demo > strong,
-  #tutorial .score-demo > strong {
-    font-size: clamp(19px, 2.7vw, 26px) !important;
-  }
-}
-@media (max-width: 560px) {
-  #tutorial .tutorial-card {
-    gap: 7px !important;
-    padding: 12px !important;
-  }
-  #tutorial .step-tag {
-    font-size: clamp(10px, 2.4vw, 14px) !important;
-    padding: 9px 10px !important;
-  }
-  #tutorial #tutorialTitle {
-    font-size: clamp(15px, 4vw, 23px) !important;
-    line-height: 1.6 !important;
-  }
-  #tutorial #tutorialText {
-    font-size: clamp(19px, 4.5vw, 25px) !important;
-    line-height: 1.25 !important;
-  }
-  #tutorial .tutorial-visual {
-    max-height: 43vh !important;
-  }
-  #tutorial .mode-demo,
-  #tutorial .score-demo {
-    font-size: clamp(16px, 3.6vw, 21px) !important;
-    padding: 9px !important;
-    gap: 7px !important;
-  }
-  #tutorial .mode-demo > strong,
-  #tutorial .score-demo > strong {
-    font-size: clamp(16px, 3.8vw, 22px) !important;
-  }
-  #tutorial .mini-score b,
-  #tutorial .mini-split > div,
-  #tutorial .mini-answers b,
-  #tutorial .mini-turn,
-  #tutorial .mini-reveal {
-    font-size: clamp(15px, 3.5vw, 20px) !important;
-    padding: 8px !important;
-  }
-  #tutorial .tutorial-card > .row .btn {
-    font-size: clamp(14px, 3.5vw, 18px) !important;
-    padding: 9px 11px !important;
-  }
-}
-@media (max-height: 700px) and (min-width: 561px) {
-  #tutorial .tutorial-card { gap: 5px !important; padding-top: 10px !important; padding-bottom: 10px !important; }
-  #tutorial #tutorialTitle { font-size: clamp(19px, 2.7vw, 34px) !important; }
-  #tutorial #tutorialText { font-size: clamp(22px, 2.5vw, 31px) !important; }
-  #tutorial .tutorial-visual { max-height: 42vh !important; margin: 5px auto !important; }
-  #tutorial .finish-demo { min-height: 145px !important; }
 }
 </style>
 
