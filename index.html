@@ -619,6 +619,83 @@ body:has(.game-screen.active){overflow:hidden}
 }
 </style>
 
+
+<style id="hoop-two-team-answer-size-balance">
+/* Two-team answers: keep short choices large, and reduce only long choices. */
+.team-panel .team-question-stage .answer-grid {
+  align-items: stretch !important;
+}
+.team-panel .team-question-stage .answer-btn {
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: clamp(8px, .9vw, 14px) !important;
+  padding: clamp(8px, .9vw, 14px) !important;
+  font-size: clamp(19px, 2.05vw, 31px) !important;
+  line-height: 1.14 !important;
+}
+.team-panel .team-question-stage .answer-btn > strong {
+  flex: 0 0 auto !important;
+  align-self: center !important;
+  font-size: 1em !important;
+  white-space: nowrap !important;
+}
+.team-panel .team-question-stage .answer-btn > span {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  font-size: 1em !important;
+  line-height: 1.14 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  text-align: center !important;
+}
+.team-panel .team-question-stage .answer-btn.team-answer-long {
+  font-size: clamp(14px, 1.35vw, 20px) !important;
+  line-height: 1.12 !important;
+  padding: clamp(6px, .65vw, 10px) !important;
+}
+.team-panel .team-question-stage .answer-btn > img {
+  flex: 0 1 auto !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: min(42%, 145px) !important;
+  max-height: clamp(58px, 10.5vh, 112px) !important;
+  object-fit: contain !important;
+}
+.team-panel .team-question-stage .answer-btn:has(> img):not(:has(> span)) > img {
+  max-width: min(58%, 175px) !important;
+  max-height: clamp(72px, 12.5vh, 132px) !important;
+}
+.team-panel .team-question-stage.team-long-answers .question-image {
+  max-height: clamp(38px, 7vh, 78px) !important;
+}
+@media (max-width: 720px) {
+  .team-panel .team-question-stage .answer-btn {
+    font-size: clamp(16px, 2.4vw, 23px) !important;
+  }
+  .team-panel .team-question-stage .answer-btn.team-answer-long {
+    font-size: clamp(12px, 1.8vw, 16px) !important;
+  }
+  .team-panel .team-question-stage .answer-btn > img {
+    max-height: 9vh !important;
+  }
+}
+@media (max-height: 600px) {
+  .team-panel .team-question-stage .answer-btn {
+    font-size: clamp(16px, 1.8vw, 23px) !important;
+  }
+  .team-panel .team-question-stage .answer-btn.team-answer-long {
+    font-size: clamp(12px, 1.2vw, 16px) !important;
+  }
+  .team-panel .team-question-stage .answer-btn:has(> img):not(:has(> span)) > img {
+    max-height: 9vh !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <section id="authScreen" class="auth">
@@ -815,7 +892,7 @@ function showRareCards(team){
 
 function advanceAfterAnswer(team){if(config.gameMode==='one'){if(oneState?.teams){oneState.index=1-oneState.index;renderOnePool()}else renderOnePool()}else{renderTeamPanel(team.index)}}
 function teamAnswer(team,correct,question,answerButton){if(!team||team.finished||team.answerLocked)return;team.answerLocked=true;if(answerButton)answerButton.disabled=true;if(correct){const seconds=(performance.now()-team.startedAt)/1000;const bonus=seconds<=3?5:seconds>=6&&seconds<=8?3:seconds>=9?1:0;scoreFeedback(team,question.points,bonus,question)}else{if(config.gameMode==='one'){if(!oneState.used.includes(question.id))oneState.used.push(question.id)}else{if(!team.used.includes(question.id))team.used.push(question.id)}team.current=null;showWrong(team,()=>advanceAfterAnswer(team))}}
-function buildQuestionStage(team,question,compact=false){const stage=document.createElement('div');stage.className='question-stage'+(compact?' team-question-stage':'');if(compact&&question.type==='mc'&&(question.options||[]).some(o=>(o.text||'').trim().length>34||(o.text||'').trim().split(/\s+/).length>6))stage.classList.add('team-long-answers');const topline=document.createElement('div');topline.className='question-topline';const title=document.createElement('h2');title.textContent=question.text;const clock=document.createElement('div');clock.className='question-clock';clock.innerHTML='<small>TIME</small><span class="elapsed-value">0.0s</span>';topline.append(title,clock);stage.append(topline);if(question.image){const img=document.createElement('img');img.className='question-image';img.src=question.image;img.alt='Question image';stage.append(img)}if(question.type==='mc'){const answers=document.createElement('div');answers.className='answer-grid';question.options.forEach((o,i)=>{const b=document.createElement('button');b.className='answer-btn';const letter=document.createElement('strong');letter.textContent=String.fromCharCode(65+i)+'. ';b.append(letter);if(o.image){const img=document.createElement('img');img.src=o.image;img.alt='';b.append(img)}if(o.text){const span=document.createElement('span');span.textContent=o.text;b.append(span)}b.onclick=()=>teamAnswer(team,i===question.correctIndex,question,b);answers.append(b)});stage.append(answers)}else{const reveal=document.createElement('button');reveal.className='btn blue';reveal.textContent='👁 Reveal Answer';const result=document.createElement('div');result.className='ident-revealed hidden';result.setAttribute('aria-live','polite');result.textContent='Answer: '+question.answer;const judge=document.createElement('div');judge.className='ident-judge hidden';const correct=document.createElement('button');correct.className='btn green';correct.textContent='✓ Correct';const wrong=document.createElement('button');wrong.className='btn pink';wrong.textContent='✕ Wrong';correct.onclick=()=>teamAnswer(team,true,question,correct);wrong.onclick=()=>teamAnswer(team,false,question,wrong);reveal.onclick=()=>{result.classList.remove('hidden');judge.classList.remove('hidden');reveal.disabled=true};judge.append(correct,wrong);stage.append(reveal,result,judge)}return stage}
+function buildQuestionStage(team,question,compact=false){const stage=document.createElement('div');stage.className='question-stage'+(compact?' team-question-stage':'');if(compact&&question.type==='mc'&&(question.options||[]).some(o=>(o.text||'').trim().length>34||(o.text||'').trim().split(/\s+/).length>6))stage.classList.add('team-long-answers');const topline=document.createElement('div');topline.className='question-topline';const title=document.createElement('h2');title.textContent=question.text;const clock=document.createElement('div');clock.className='question-clock';clock.innerHTML='<small>TIME</small><span class="elapsed-value">0.0s</span>';topline.append(title,clock);stage.append(topline);if(question.image){const img=document.createElement('img');img.className='question-image';img.src=question.image;img.alt='Question image';stage.append(img)}if(question.type==='mc'){const answers=document.createElement('div');answers.className='answer-grid';question.options.forEach((o,i)=>{const b=document.createElement('button');b.className='answer-btn';const letter=document.createElement('strong');letter.textContent=String.fromCharCode(65+i)+'. ';b.append(letter);if(o.image){const img=document.createElement('img');img.src=o.image;img.alt='';b.append(img)}if(o.text){const span=document.createElement('span');span.textContent=o.text;b.append(span);if(compact&&((o.text||'').trim().length>32||(o.text||'').trim().split(/\s+/).length>5))b.classList.add('team-answer-long')}b.onclick=()=>teamAnswer(team,i===question.correctIndex,question,b);answers.append(b)});stage.append(answers)}else{const reveal=document.createElement('button');reveal.className='btn blue';reveal.textContent='👁 Reveal Answer';const result=document.createElement('div');result.className='ident-revealed hidden';result.setAttribute('aria-live','polite');result.textContent='Answer: '+question.answer;const judge=document.createElement('div');judge.className='ident-judge hidden';const correct=document.createElement('button');correct.className='btn green';correct.textContent='✓ Correct';const wrong=document.createElement('button');wrong.className='btn pink';wrong.textContent='✕ Wrong';correct.onclick=()=>teamAnswer(team,true,question,correct);wrong.onclick=()=>teamAnswer(team,false,question,wrong);reveal.onclick=()=>{result.classList.remove('hidden');judge.classList.remove('hidden');reveal.disabled=true};judge.append(correct,wrong);stage.append(reveal,result,judge)}return stage}
 
 function fitBallPool(pool,count){
  requestAnimationFrame(()=>{
